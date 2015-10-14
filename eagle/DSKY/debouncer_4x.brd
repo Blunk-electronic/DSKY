@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.2" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -87,10 +87,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="be_logic">
@@ -427,115 +423,115 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterlplatten-anfragef
 </pass>
 </autorouter>
 <elements>
-<element name="IC101" library="be_logic" package="T_NDIP14" value="" x="60.6" y="45.4" smashed="yes">
-<attribute name="UPDATED" value="" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="FUNCTION" value="" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="COMMISSIONED" value="2015-10-14" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_BEL" value="IC_PAC_T_NDIP14_VAL_SN74x00N" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="YES" x="83.46" y="39.05" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.329" y="42.352" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="53.869" y="44.765" size="1" layer="27" font="vector" ratio="13"/>
+<element name="IC101" library="be_logic" package="T_NDIP14" value="" x="21.6" y="30.4" smashed="yes">
+<attribute name="UPDATED" value="" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="FUNCTION" value="" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="COMMISSIONED" value="2015-10-14" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_BEL" value="IC_PAC_T_NDIP14_VAL_SN74x00N" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="YES" x="44.46" y="24.05" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.329" y="27.352" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="14.869" y="29.765" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="C101" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="47.4" y="42.2" smashed="yes" rot="R270">
-<attribute name="UPDATED" value="" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FUNCTION" value="" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="COMMISSIONED" value="2015-01-15" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="BOM" value="YES" x="4.22" y="-0.98" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="49.15" y="45.35" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="46.45" y="45.35" size="1" layer="27" font="vector" ratio="15" rot="R90"/>
+<element name="C101" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="8.4" y="27.2" smashed="yes" rot="R270">
+<attribute name="UPDATED" value="" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="FUNCTION" value="" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COMMISSIONED" value="2015-01-15" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="BOM" value="YES" x="-34.78" y="-15.98" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="10.15" y="30.35" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="7.45" y="30.35" size="1" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="RN101" library="be_rcl" package="T_SIL8" value="220" x="59.4" y="37.6" smashed="yes">
-<attribute name="UPDATED" value="2015-10-14" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="FUNCTION" value="" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="COMMISSIONED" value="2014-10-14" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="YES" x="83.53" y="7.12" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="70.4" y="37.2" size="1" layer="25" font="vector" ratio="13"/>
-<attribute name="VALUE" x="70.4" y="35.7" size="1" layer="27" font="vector" ratio="13"/>
+<element name="RN101" library="be_rcl" package="T_SIL8" value="220" x="20.4" y="22.6" smashed="yes">
+<attribute name="UPDATED" value="2015-10-14" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="FUNCTION" value="" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="COMMISSIONED" value="2014-10-14" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="YES" x="44.53" y="-7.88" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.4" y="22.2" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="31.4" y="20.7" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="C102" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="45" y="36.4" smashed="yes" rot="R270">
-<attribute name="UPDATED" value="" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FUNCTION" value="" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="COMMISSIONED" value="2015-01-15" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="BOM" value="YES" x="-5.8" y="16.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="42.75" y="38.35" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="44.05" y="39.15" size="1" layer="27" font="vector" ratio="15" rot="R90"/>
+<element name="C102" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="6" y="21.4" smashed="yes" rot="R270">
+<attribute name="UPDATED" value="" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="FUNCTION" value="" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COMMISSIONED" value="2015-01-15" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="BOM" value="YES" x="-44.8" y="1.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.75" y="23.35" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="5.05" y="24.15" size="1" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="RN103" library="be_rcl" package="T_SIL8" value="4k7" x="59.4" y="33.8" smashed="yes">
-<attribute name="UPDATED" value="2015-10-14" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="FUNCTION" value="" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="COMMISSIONED" value="2014-10-14" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_4k7" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="YES" x="83.53" y="-4.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="70.4" y="33.6" size="1" layer="25" font="vector" ratio="13"/>
-<attribute name="VALUE" x="70.4" y="32.1" size="1" layer="27" font="vector" ratio="13"/>
+<element name="RN103" library="be_rcl" package="T_SIL8" value="4k7" x="20.4" y="18.8" smashed="yes">
+<attribute name="UPDATED" value="2015-10-14" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="FUNCTION" value="" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="COMMISSIONED" value="2014-10-14" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_4k7" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="YES" x="44.53" y="-19.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.4" y="18.6" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="31.4" y="17.1" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="IC102" library="be_logic" package="T_NDIP14" value="" x="60.6" y="22.2" smashed="yes">
-<attribute name="UPDATED" value="" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="FUNCTION" value="" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="COMMISSIONED" value="2015-10-14" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_BEL" value="IC_PAC_T_NDIP14_VAL_SN74x00N" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="YES" x="83.46" y="3.15" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.329" y="19.152" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="53.869" y="21.565" size="1" layer="27" font="vector" ratio="13"/>
+<element name="IC102" library="be_logic" package="T_NDIP14" value="" x="21.6" y="7.2" smashed="yes">
+<attribute name="UPDATED" value="" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="FUNCTION" value="" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="COMMISSIONED" value="2015-10-14" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_BEL" value="IC_PAC_T_NDIP14_VAL_SN74x00N" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="YES" x="44.46" y="-11.85" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.329" y="4.152" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="14.869" y="6.565" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="C103" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="45" y="30" smashed="yes" rot="R270">
-<attribute name="UPDATED" value="" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FUNCTION" value="" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="COMMISSIONED" value="2015-01-15" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="BOM" value="YES" x="-5.8" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="42.15" y="28.15" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="41.75" y="32.75" size="1" layer="27" font="vector" ratio="15"/>
+<element name="C103" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="6" y="15" smashed="yes" rot="R270">
+<attribute name="UPDATED" value="" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="FUNCTION" value="" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COMMISSIONED" value="2015-01-15" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="BOM" value="YES" x="-44.8" y="-16.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.15" y="13.15" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="2.75" y="17.75" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="RN102" library="be_rcl" package="T_SIL8" value="220" x="59.4" y="30" smashed="yes">
-<attribute name="UPDATED" value="2015-10-14" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="FUNCTION" value="" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="COMMISSIONED" value="2014-10-14" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="YES" x="83.53" y="-15.72" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="70.4" y="29.8" size="1" layer="25" font="vector" ratio="13"/>
-<attribute name="VALUE" x="70.4" y="28.3" size="1" layer="27" font="vector" ratio="13"/>
+<element name="RN102" library="be_rcl" package="T_SIL8" value="220" x="20.4" y="15" smashed="yes">
+<attribute name="UPDATED" value="2015-10-14" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="FUNCTION" value="" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="COMMISSIONED" value="2014-10-14" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL8_VAL_" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="YES" x="44.53" y="-30.72" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.4" y="14.8" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="31.4" y="13.3" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="C104" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="48" y="24.8" smashed="yes" rot="R270">
-<attribute name="UPDATED" value="" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="FUNCTION" value="" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="COMMISSIONED" value="2015-01-15" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="BOM" value="YES" x="-2.8" y="-18.38" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="44.05" y="26.05" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="46.35" y="20.95" size="1" layer="27" font="vector" ratio="15"/>
+<element name="C104" library="be_rcl" package="T_RADIAL_5MM_GRID_2.54MM" value="10u" x="9" y="9.8" smashed="yes" rot="R270">
+<attribute name="UPDATED" value="" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="FUNCTION" value="" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="COMMISSIONED" value="2015-01-15" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="BOM" value="YES" x="-41.8" y="-33.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.05" y="11.05" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="VALUE" x="7.35" y="5.95" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="C105" library="be_rcl" package="S_0805" value="100n" x="60.64" y="45.38" smashed="yes" rot="MR180">
-<attribute name="UPDATED" value="" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="FUNCTION" value="" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="COMMISSIONED" value="2013-08-30" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_S_0805_VAL_100n" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="BOM" value="YES" x="75.88" y="103.8" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="63.24" y="45.88" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
-<attribute name="VALUE" x="58.84" y="44.18" size="1" layer="28" font="vector" ratio="13" rot="MR180"/>
+<element name="C105" library="be_rcl" package="S_0805" value="100n" x="21.64" y="30.38" smashed="yes" rot="MR180">
+<attribute name="UPDATED" value="" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="FUNCTION" value="" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_S_0805_VAL_100n" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="BOM" value="YES" x="36.88" y="88.8" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="24.24" y="30.88" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
+<attribute name="VALUE" x="19.84" y="29.18" size="1" layer="28" font="vector" ratio="13" rot="MR180"/>
 </element>
-<element name="C106" library="be_rcl" package="S_0805" value="100n" x="60.6" y="22.2" smashed="yes" rot="MR180">
-<attribute name="UPDATED" value="" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="FUNCTION" value="" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="COMMISSIONED" value="2013-08-30" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PART_CODE_BEL" value="C_PAC_S_0805_VAL_100n" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="BOM" value="YES" x="80.92" y="80.62" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="62.6" y="23.1" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
-<attribute name="VALUE" x="58.6" y="20.8" size="1" layer="28" font="vector" ratio="13" rot="MR180"/>
+<element name="C106" library="be_rcl" package="S_0805" value="100n" x="21.6" y="7.2" smashed="yes" rot="MR180">
+<attribute name="UPDATED" value="" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="FUNCTION" value="" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PART_CODE_BEL" value="C_PAC_S_0805_VAL_100n" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="BOM" value="YES" x="41.92" y="65.62" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="23.6" y="8.1" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
+<attribute name="VALUE" x="19.6" y="5.8" size="1" layer="28" font="vector" ratio="13" rot="MR180"/>
 </element>
 </elements>
 <signals>
@@ -544,40 +540,40 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterlplatten-anfragef
 <contactref element="C102" pad="-"/>
 <contactref element="C103" pad="-"/>
 <contactref element="C104" pad="-"/>
-<wire x1="45" y1="35.13" x2="43.4" y2="36.73" width="0.3" layer="16"/>
-<wire x1="43.4" y1="36.73" x2="43.4" y2="38.6" width="0.3" layer="16"/>
-<wire x1="43.4" y1="38.6" x2="45.73" y2="40.93" width="0.3" layer="16"/>
-<wire x1="45.73" y1="40.93" x2="47.4" y2="40.93" width="0.3" layer="16"/>
-<wire x1="45" y1="28.73" x2="45.93" y2="27.8" width="0.3" layer="16"/>
-<wire x1="45.93" y1="27.8" x2="49.2" y2="27.8" width="0.3" layer="16"/>
-<wire x1="49.2" y1="27.8" x2="49.8" y2="27.2" width="0.3" layer="16"/>
-<wire x1="49.8" y1="27.2" x2="49.8" y2="24.2" width="0.3" layer="16"/>
-<wire x1="49.8" y1="24.2" x2="49.13" y2="23.53" width="0.3" layer="16"/>
-<wire x1="49.13" y1="23.53" x2="48" y2="23.53" width="0.3" layer="16"/>
-<wire x1="45" y1="35.13" x2="47.2" y2="32.93" width="0.3" layer="16"/>
-<wire x1="47.2" y1="32.93" x2="47.2" y2="29.2" width="0.3" layer="16"/>
-<wire x1="47.2" y1="29.2" x2="46.73" y2="28.73" width="0.3" layer="16"/>
-<wire x1="46.73" y1="28.73" x2="45" y2="28.73" width="0.3" layer="16"/>
+<wire x1="6" y1="20.13" x2="4.4" y2="21.73" width="0.3" layer="16"/>
+<wire x1="4.4" y1="21.73" x2="4.4" y2="23.6" width="0.3" layer="16"/>
+<wire x1="4.4" y1="23.6" x2="6.73" y2="25.93" width="0.3" layer="16"/>
+<wire x1="6.73" y1="25.93" x2="8.4" y2="25.93" width="0.3" layer="16"/>
+<wire x1="6" y1="13.73" x2="6.93" y2="12.8" width="0.3" layer="16"/>
+<wire x1="6.93" y1="12.8" x2="10.2" y2="12.8" width="0.3" layer="16"/>
+<wire x1="10.2" y1="12.8" x2="10.8" y2="12.2" width="0.3" layer="16"/>
+<wire x1="10.8" y1="12.2" x2="10.8" y2="9.2" width="0.3" layer="16"/>
+<wire x1="10.8" y1="9.2" x2="10.13" y2="8.53" width="0.3" layer="16"/>
+<wire x1="10.13" y1="8.53" x2="9" y2="8.53" width="0.3" layer="16"/>
+<wire x1="6" y1="20.13" x2="8.2" y2="17.93" width="0.3" layer="16"/>
+<wire x1="8.2" y1="17.93" x2="8.2" y2="14.2" width="0.3" layer="16"/>
+<wire x1="8.2" y1="14.2" x2="7.73" y2="13.73" width="0.3" layer="16"/>
+<wire x1="7.73" y1="13.73" x2="6" y2="13.73" width="0.3" layer="16"/>
 <contactref element="C105" pad="2"/>
 <contactref element="C106" pad="2"/>
 <contactref element="IC102" pad="7"/>
 <contactref element="IC101" pad="7"/>
-<wire x1="61.55" y1="22.2" x2="61.2" y2="22.2" width="0.3" layer="16"/>
-<wire x1="61.2" y1="22.2" x2="61.2" y2="23.6" width="0.3" layer="16"/>
-<wire x1="61.55" y1="22.2" x2="62.15" y2="21.6" width="0.3" layer="16"/>
-<wire x1="62.15" y1="21.6" x2="63" y2="21.6" width="0.3" layer="16"/>
-<via x="63" y="21.6" extent="1-16" drill="0.3"/>
-<via x="61.2" y="23.6" extent="1-16" drill="0.3"/>
-<wire x1="61.59" y1="45.38" x2="62.21" y2="46" width="0.3" layer="16"/>
-<wire x1="62.21" y1="46" x2="63" y2="46" width="0.3" layer="16"/>
-<wire x1="61.59" y1="45.38" x2="62.17" y2="44.8" width="0.3" layer="16"/>
-<wire x1="62.17" y1="44.8" x2="63" y2="44.8" width="0.3" layer="16"/>
-<via x="63" y="44.8" extent="1-16" drill="0.3"/>
-<via x="63" y="46" extent="1-16" drill="0.3"/>
-<wire x1="63" y1="44.8" x2="68.22" y2="41.59" width="0" layer="19" extent="16-16"/>
-<wire x1="47.4" y1="40.93" x2="61.59" y2="45.38" width="0" layer="19" extent="16-16"/>
-<wire x1="61.2" y1="23.6" x2="49.8" y2="24.2" width="0" layer="19" extent="16-16"/>
-<wire x1="68.22" y1="18.39" x2="63" y2="21.6" width="0" layer="19" extent="16-16"/>
+<wire x1="22.55" y1="7.2" x2="22.2" y2="7.2" width="0.3" layer="16"/>
+<wire x1="22.2" y1="7.2" x2="22.2" y2="8.6" width="0.3" layer="16"/>
+<wire x1="22.55" y1="7.2" x2="23.15" y2="6.6" width="0.3" layer="16"/>
+<wire x1="23.15" y1="6.6" x2="24" y2="6.6" width="0.3" layer="16"/>
+<via x="24" y="6.6" extent="1-16" drill="0.3"/>
+<via x="22.2" y="8.6" extent="1-16" drill="0.3"/>
+<wire x1="22.59" y1="30.38" x2="23.21" y2="31" width="0.3" layer="16"/>
+<wire x1="23.21" y1="31" x2="24" y2="31" width="0.3" layer="16"/>
+<wire x1="22.59" y1="30.38" x2="23.17" y2="29.8" width="0.3" layer="16"/>
+<wire x1="23.17" y1="29.8" x2="24" y2="29.8" width="0.3" layer="16"/>
+<via x="24" y="29.8" extent="1-16" drill="0.3"/>
+<via x="24" y="31" extent="1-16" drill="0.3"/>
+<wire x1="24" y1="29.8" x2="29.22" y2="26.59" width="0" layer="19" extent="16-16"/>
+<wire x1="8.4" y1="25.93" x2="22.59" y2="30.38" width="0" layer="19" extent="16-16"/>
+<wire x1="22.2" y1="8.6" x2="10.8" y2="9.2" width="0" layer="19" extent="16-16"/>
+<wire x1="29.22" y1="3.39" x2="24" y2="6.6" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="IN_1#">
 <contactref element="RN101" pad="1"/>
@@ -589,124 +585,124 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterlplatten-anfragef
 <contactref element="RN102" pad="2"/>
 <contactref element="RN102" pad="3"/>
 <contactref element="C103" pad="+"/>
-<wire x1="55.59" y1="30" x2="53.05" y2="30" width="0.15" layer="1"/>
-<wire x1="53.05" y1="30" x2="53" y2="30.05" width="0.15" layer="1"/>
-<wire x1="53" y1="30.05" x2="53" y2="31.6" width="0.15" layer="1"/>
-<wire x1="53" y1="31.6" x2="52.8" y2="31.8" width="0.15" layer="1"/>
-<wire x1="52.8" y1="31.8" x2="48.4" y2="31.8" width="0.15" layer="1"/>
-<wire x1="48.4" y1="31.8" x2="47.87" y2="31.27" width="0.15" layer="1"/>
-<wire x1="47.87" y1="31.27" x2="45" y2="31.27" width="0.15" layer="1"/>
+<wire x1="16.59" y1="15" x2="14.05" y2="15" width="0.15" layer="1"/>
+<wire x1="14.05" y1="15" x2="14" y2="15.05" width="0.15" layer="1"/>
+<wire x1="14" y1="15.05" x2="14" y2="16.6" width="0.15" layer="1"/>
+<wire x1="14" y1="16.6" x2="13.8" y2="16.8" width="0.15" layer="1"/>
+<wire x1="13.8" y1="16.8" x2="9.4" y2="16.8" width="0.15" layer="1"/>
+<wire x1="9.4" y1="16.8" x2="8.87" y2="16.27" width="0.15" layer="1"/>
+<wire x1="8.87" y1="16.27" x2="6" y2="16.27" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_31">
 <contactref element="IC102" pad="1"/>
 <contactref element="IC102" pad="2"/>
 <contactref element="RN103" pad="5"/>
 <contactref element="RN102" pad="4"/>
-<wire x1="60.67" y1="33.8" x2="60.67" y2="33.27" width="0.15" layer="1"/>
-<wire x1="60.67" y1="33.27" x2="58.4" y2="31" width="0.15" layer="1"/>
-<wire x1="58.4" y1="31" x2="58.4" y2="30.27" width="0.15" layer="1"/>
-<wire x1="58.4" y1="30.27" x2="58.13" y2="30" width="0.15" layer="1"/>
-<wire x1="58.13" y1="30" x2="58.13" y2="30.47" width="0.15" layer="16"/>
-<wire x1="58.13" y1="30.47" x2="56.8" y2="31.8" width="0.15" layer="16"/>
-<wire x1="56.8" y1="31.8" x2="52.2" y2="31.8" width="0.15" layer="16"/>
-<wire x1="52.2" y1="31.8" x2="51.8" y2="31.4" width="0.15" layer="16"/>
-<wire x1="51.8" y1="31.4" x2="51.8" y2="20.2" width="0.15" layer="16"/>
-<wire x1="51.8" y1="20.2" x2="53" y2="19" width="0.15" layer="16"/>
-<wire x1="53" y1="19" x2="53" y2="18.41" width="0.15" layer="16"/>
-<wire x1="53" y1="18.41" x2="52.98" y2="18.39" width="0.15" layer="16"/>
-<wire x1="55.52" y1="18.39" x2="52.98" y2="18.39" width="0.15" layer="16"/>
+<wire x1="21.67" y1="18.8" x2="21.67" y2="18.27" width="0.15" layer="1"/>
+<wire x1="21.67" y1="18.27" x2="19.4" y2="16" width="0.15" layer="1"/>
+<wire x1="19.4" y1="16" x2="19.4" y2="15.27" width="0.15" layer="1"/>
+<wire x1="19.4" y1="15.27" x2="19.13" y2="15" width="0.15" layer="1"/>
+<wire x1="19.13" y1="15" x2="19.13" y2="15.47" width="0.15" layer="16"/>
+<wire x1="19.13" y1="15.47" x2="17.8" y2="16.8" width="0.15" layer="16"/>
+<wire x1="17.8" y1="16.8" x2="13.2" y2="16.8" width="0.15" layer="16"/>
+<wire x1="13.2" y1="16.8" x2="12.8" y2="16.4" width="0.15" layer="16"/>
+<wire x1="12.8" y1="16.4" x2="12.8" y2="5.2" width="0.15" layer="16"/>
+<wire x1="12.8" y1="5.2" x2="14" y2="4" width="0.15" layer="16"/>
+<wire x1="14" y1="4" x2="14" y2="3.41" width="0.15" layer="16"/>
+<wire x1="14" y1="3.41" x2="13.98" y2="3.39" width="0.15" layer="16"/>
+<wire x1="16.52" y1="3.39" x2="13.98" y2="3.39" width="0.15" layer="16"/>
 </signal>
 <signal name="DEBOUNCER_32">
 <contactref element="IC102" pad="3"/>
 <contactref element="IC102" pad="4"/>
 <contactref element="IC102" pad="5"/>
-<wire x1="58.06" y1="18.39" x2="60.6" y2="18.39" width="0.15" layer="1"/>
-<wire x1="60.6" y1="18.39" x2="63.14" y2="18.39" width="0.15" layer="1"/>
+<wire x1="19.06" y1="3.39" x2="21.6" y2="3.39" width="0.15" layer="1"/>
+<wire x1="21.6" y1="3.39" x2="24.14" y2="3.39" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_1_OUT#">
 <contactref element="IC101" pad="6"/>
 <contactref element="RN103" pad="4"/>
-<wire x1="65.68" y1="41.59" x2="65.68" y2="40.88" width="0.15" layer="1"/>
-<wire x1="65.68" y1="40.88" x2="64.4" y2="39.6" width="0.15" layer="1"/>
-<wire x1="64.4" y1="39.6" x2="64.4" y2="36" width="0.15" layer="1"/>
-<wire x1="64.4" y1="36" x2="64.2" y2="35.8" width="0.15" layer="1"/>
-<wire x1="64.2" y1="35.8" x2="59.4" y2="35.8" width="0.15" layer="1"/>
-<wire x1="59.4" y1="35.8" x2="58.2" y2="34.6" width="0.15" layer="1"/>
-<wire x1="58.2" y1="34.6" x2="58.2" y2="33.87" width="0.15" layer="1"/>
-<wire x1="58.2" y1="33.87" x2="58.13" y2="33.8" width="0.15" layer="1"/>
+<wire x1="26.68" y1="26.59" x2="26.68" y2="25.88" width="0.15" layer="1"/>
+<wire x1="26.68" y1="25.88" x2="25.4" y2="24.6" width="0.15" layer="1"/>
+<wire x1="25.4" y1="24.6" x2="25.4" y2="21" width="0.15" layer="1"/>
+<wire x1="25.4" y1="21" x2="25.2" y2="20.8" width="0.15" layer="1"/>
+<wire x1="25.2" y1="20.8" x2="20.4" y2="20.8" width="0.15" layer="1"/>
+<wire x1="20.4" y1="20.8" x2="19.2" y2="19.6" width="0.15" layer="1"/>
+<wire x1="19.2" y1="19.6" x2="19.2" y2="18.87" width="0.15" layer="1"/>
+<wire x1="19.2" y1="18.87" x2="19.13" y2="18.8" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_2_OUT#">
 <contactref element="IC101" pad="8"/>
 <contactref element="RN103" pad="2"/>
-<wire x1="53.05" y1="33.8" x2="53" y2="33.85" width="0.15" layer="16"/>
-<wire x1="53" y1="33.85" x2="53" y2="34.6" width="0.15" layer="16"/>
-<wire x1="53" y1="34.6" x2="54.2" y2="35.8" width="0.15" layer="16"/>
-<wire x1="54.2" y1="35.8" x2="69.6" y2="35.8" width="0.15" layer="16"/>
-<via x="69.6" y="35.8" extent="1-16" drill="0.3"/>
-<wire x1="68.22" y1="49.21" x2="68.22" y2="44.58" width="0.15" layer="1"/>
-<wire x1="68.22" y1="44.58" x2="69.6" y2="43.2" width="0.15" layer="1"/>
-<wire x1="69.6" y1="43.2" x2="69.6" y2="35.8" width="0.15" layer="1"/>
+<wire x1="14.05" y1="18.8" x2="14" y2="18.85" width="0.15" layer="16"/>
+<wire x1="14" y1="18.85" x2="14" y2="19.6" width="0.15" layer="16"/>
+<wire x1="14" y1="19.6" x2="15.2" y2="20.8" width="0.15" layer="16"/>
+<wire x1="15.2" y1="20.8" x2="30.6" y2="20.8" width="0.15" layer="16"/>
+<via x="30.6" y="20.8" extent="1-16" drill="0.3"/>
+<wire x1="29.22" y1="34.21" x2="29.22" y2="29.58" width="0.15" layer="1"/>
+<wire x1="29.22" y1="29.58" x2="30.6" y2="28.2" width="0.15" layer="1"/>
+<wire x1="30.6" y1="28.2" x2="30.6" y2="20.8" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_40">
 <contactref element="RN102" pad="6"/>
 <contactref element="RN102" pad="7"/>
 <contactref element="C104" pad="+"/>
-<wire x1="65.75" y1="30" x2="63.21" y2="30" width="0.15" layer="1"/>
-<wire x1="48" y1="26.07" x2="53.47" y2="20.6" width="0.15" layer="1"/>
-<wire x1="53.47" y1="20.6" x2="63.6" y2="20.6" width="0.15" layer="1"/>
-<wire x1="63.6" y1="20.6" x2="64.4" y2="19.8" width="0.15" layer="1"/>
-<wire x1="64.4" y1="19.8" x2="64.4" y2="17" width="0.15" layer="1"/>
-<wire x1="64.4" y1="17" x2="65" y2="16.4" width="0.15" layer="1"/>
-<wire x1="65" y1="16.4" x2="66.4" y2="16.4" width="0.15" layer="1"/>
-<wire x1="66.4" y1="16.4" x2="66.8" y2="16.8" width="0.15" layer="1"/>
-<wire x1="66.8" y1="16.8" x2="66.8" y2="28.2" width="0.15" layer="1"/>
-<wire x1="66.8" y1="28.2" x2="65.75" y2="29.25" width="0.15" layer="1"/>
-<wire x1="65.75" y1="29.25" x2="65.75" y2="30" width="0.15" layer="1"/>
+<wire x1="26.75" y1="15" x2="24.21" y2="15" width="0.15" layer="1"/>
+<wire x1="9" y1="11.07" x2="14.47" y2="5.6" width="0.15" layer="1"/>
+<wire x1="14.47" y1="5.6" x2="24.6" y2="5.6" width="0.15" layer="1"/>
+<wire x1="24.6" y1="5.6" x2="25.4" y2="4.8" width="0.15" layer="1"/>
+<wire x1="25.4" y1="4.8" x2="25.4" y2="2" width="0.15" layer="1"/>
+<wire x1="25.4" y1="2" x2="26" y2="1.4" width="0.15" layer="1"/>
+<wire x1="26" y1="1.4" x2="27.4" y2="1.4" width="0.15" layer="1"/>
+<wire x1="27.4" y1="1.4" x2="27.8" y2="1.8" width="0.15" layer="1"/>
+<wire x1="27.8" y1="1.8" x2="27.8" y2="13.2" width="0.15" layer="1"/>
+<wire x1="27.8" y1="13.2" x2="26.75" y2="14.25" width="0.15" layer="1"/>
+<wire x1="26.75" y1="14.25" x2="26.75" y2="15" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_41">
 <contactref element="RN102" pad="8"/>
 <contactref element="IC102" pad="13"/>
 <contactref element="IC102" pad="12"/>
 <contactref element="RN103" pad="7"/>
-<wire x1="65.75" y1="33.8" x2="65.75" y2="33.45" width="0.15" layer="1"/>
-<wire x1="65.75" y1="33.45" x2="68.2" y2="31" width="0.15" layer="1"/>
-<wire x1="68.2" y1="31" x2="68.2" y2="30.09" width="0.15" layer="1"/>
-<wire x1="68.2" y1="30.09" x2="68.29" y2="30" width="0.15" layer="1"/>
-<wire x1="55.52" y1="26.01" x2="58.06" y2="26.01" width="0.15" layer="16"/>
-<wire x1="58.06" y1="26.01" x2="58.06" y2="26.46" width="0.15" layer="16"/>
-<wire x1="58.06" y1="26.46" x2="59.4" y2="27.8" width="0.15" layer="16"/>
-<wire x1="59.4" y1="27.8" x2="59.4" y2="31.2" width="0.15" layer="16"/>
-<wire x1="59.4" y1="31.2" x2="60" y2="31.8" width="0.15" layer="16"/>
-<wire x1="60" y1="31.8" x2="64.8" y2="31.8" width="0.15" layer="16"/>
-<wire x1="64.8" y1="31.8" x2="65.4" y2="32.6" width="0.15" layer="16"/>
-<wire x1="65.4" y1="32.6" x2="65.75" y2="33.8" width="0.15" layer="16"/>
+<wire x1="26.75" y1="18.8" x2="26.75" y2="18.45" width="0.15" layer="1"/>
+<wire x1="26.75" y1="18.45" x2="29.2" y2="16" width="0.15" layer="1"/>
+<wire x1="29.2" y1="16" x2="29.2" y2="15.09" width="0.15" layer="1"/>
+<wire x1="29.2" y1="15.09" x2="29.29" y2="15" width="0.15" layer="1"/>
+<wire x1="16.52" y1="11.01" x2="19.06" y2="11.01" width="0.15" layer="16"/>
+<wire x1="19.06" y1="11.01" x2="19.06" y2="11.46" width="0.15" layer="16"/>
+<wire x1="19.06" y1="11.46" x2="20.4" y2="12.8" width="0.15" layer="16"/>
+<wire x1="20.4" y1="12.8" x2="20.4" y2="16.2" width="0.15" layer="16"/>
+<wire x1="20.4" y1="16.2" x2="21" y2="16.8" width="0.15" layer="16"/>
+<wire x1="21" y1="16.8" x2="25.8" y2="16.8" width="0.15" layer="16"/>
+<wire x1="25.8" y1="16.8" x2="26.4" y2="17.6" width="0.15" layer="16"/>
+<wire x1="26.4" y1="17.6" x2="26.75" y2="18.8" width="0.15" layer="16"/>
 </signal>
 <signal name="DEBOUNCER_22">
 <contactref element="IC101" pad="11"/>
 <contactref element="IC101" pad="10"/>
 <contactref element="IC101" pad="9"/>
-<wire x1="60.6" y1="49.21" x2="63.14" y2="49.21" width="0.15" layer="1"/>
-<wire x1="63.14" y1="49.21" x2="65.68" y2="49.21" width="0.15" layer="1"/>
+<wire x1="21.6" y1="34.21" x2="24.14" y2="34.21" width="0.15" layer="1"/>
+<wire x1="24.14" y1="34.21" x2="26.68" y2="34.21" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_3_OUT#">
 <contactref element="IC102" pad="6"/>
 <contactref element="RN103" pad="6"/>
-<wire x1="63.21" y1="33.8" x2="63.2" y2="33.79" width="0.15" layer="1"/>
-<wire x1="63.2" y1="33.79" x2="63.2" y2="33" width="0.15" layer="1"/>
-<wire x1="63.2" y1="33" x2="61.8" y2="31.6" width="0.15" layer="1"/>
-<wire x1="61.8" y1="31.6" x2="61.8" y2="24.4" width="0.15" layer="1"/>
-<wire x1="61.8" y1="24.4" x2="65.68" y2="20.52" width="0.15" layer="1"/>
-<wire x1="65.68" y1="20.52" x2="65.68" y2="18.39" width="0.15" layer="1"/>
+<wire x1="24.21" y1="18.8" x2="24.2" y2="18.79" width="0.15" layer="1"/>
+<wire x1="24.2" y1="18.79" x2="24.2" y2="18" width="0.15" layer="1"/>
+<wire x1="24.2" y1="18" x2="22.8" y2="16.6" width="0.15" layer="1"/>
+<wire x1="22.8" y1="16.6" x2="22.8" y2="9.4" width="0.15" layer="1"/>
+<wire x1="22.8" y1="9.4" x2="26.68" y2="5.52" width="0.15" layer="1"/>
+<wire x1="26.68" y1="5.52" x2="26.68" y2="3.39" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_4_OUT#">
 <contactref element="IC102" pad="8"/>
 <contactref element="RN103" pad="8"/>
-<wire x1="68.29" y1="33.8" x2="68.2" y2="33.71" width="0.15" layer="16"/>
-<wire x1="68.2" y1="33.71" x2="68.2" y2="32.8" width="0.15" layer="16"/>
-<wire x1="68.2" y1="32.8" x2="67" y2="31.6" width="0.15" layer="16"/>
-<wire x1="67" y1="31.6" x2="67" y2="27.8" width="0.15" layer="16"/>
-<wire x1="67" y1="27.8" x2="68.22" y2="26.58" width="0.15" layer="16"/>
-<wire x1="68.22" y1="26.58" x2="68.22" y2="26.01" width="0.15" layer="16"/>
+<wire x1="29.29" y1="18.8" x2="29.2" y2="18.71" width="0.15" layer="16"/>
+<wire x1="29.2" y1="18.71" x2="29.2" y2="17.8" width="0.15" layer="16"/>
+<wire x1="29.2" y1="17.8" x2="28" y2="16.6" width="0.15" layer="16"/>
+<wire x1="28" y1="16.6" x2="28" y2="12.8" width="0.15" layer="16"/>
+<wire x1="28" y1="12.8" x2="29.22" y2="11.58" width="0.15" layer="16"/>
+<wire x1="29.22" y1="11.58" x2="29.22" y2="11.01" width="0.15" layer="16"/>
 </signal>
 <signal name="IN_3#">
 <contactref element="RN102" pad="1"/>
@@ -719,98 +715,98 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterlplatten-anfragef
 <contactref element="C105" pad="1"/>
 <contactref element="IC101" pad="14"/>
 <contactref element="IC102" pad="14"/>
-<wire x1="59.65" y1="22.2" x2="59.05" y2="22.8" width="0.3" layer="16"/>
-<wire x1="59.05" y1="22.8" x2="58.2" y2="22.8" width="0.3" layer="16"/>
-<via x="58.2" y="22.8" extent="1-16" drill="0.3"/>
-<wire x1="59.65" y1="22.2" x2="59.05" y2="21.6" width="0.3" layer="16"/>
-<wire x1="59.05" y1="21.6" x2="58.2" y2="21.6" width="0.3" layer="16"/>
-<via x="58.2" y="21.6" extent="1-16" drill="0.3"/>
-<wire x1="59.69" y1="45.38" x2="59.07" y2="46" width="0.3" layer="16"/>
-<wire x1="59.07" y1="46" x2="58.4" y2="46" width="0.3" layer="16"/>
-<wire x1="59.69" y1="45.38" x2="59.11" y2="44.8" width="0.3" layer="16"/>
-<wire x1="59.11" y1="44.8" x2="58.4" y2="44.8" width="0.3" layer="16"/>
-<via x="58.4" y="44.8" extent="1-16" drill="0.3"/>
-<via x="58.4" y="46" extent="1-16" drill="0.3"/>
-<wire x1="58.4" y1="46" x2="52.98" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="52.98" y1="26.01" x2="58.4" y2="44.8" width="0" layer="19" extent="16-16"/>
-<wire x1="58.2" y1="22.8" x2="52.98" y2="26.01" width="0" layer="19" extent="1-1"/>
+<wire x1="20.65" y1="7.2" x2="20.05" y2="7.8" width="0.3" layer="16"/>
+<wire x1="20.05" y1="7.8" x2="19.2" y2="7.8" width="0.3" layer="16"/>
+<via x="19.2" y="7.8" extent="1-16" drill="0.3"/>
+<wire x1="20.65" y1="7.2" x2="20.05" y2="6.6" width="0.3" layer="16"/>
+<wire x1="20.05" y1="6.6" x2="19.2" y2="6.6" width="0.3" layer="16"/>
+<via x="19.2" y="6.6" extent="1-16" drill="0.3"/>
+<wire x1="20.69" y1="30.38" x2="20.07" y2="31" width="0.3" layer="16"/>
+<wire x1="20.07" y1="31" x2="19.4" y2="31" width="0.3" layer="16"/>
+<wire x1="20.69" y1="30.38" x2="20.11" y2="29.8" width="0.3" layer="16"/>
+<wire x1="20.11" y1="29.8" x2="19.4" y2="29.8" width="0.3" layer="16"/>
+<via x="19.4" y="29.8" extent="1-16" drill="0.3"/>
+<via x="19.4" y="31" extent="1-16" drill="0.3"/>
+<wire x1="19.4" y1="31" x2="13.98" y2="34.21" width="0" layer="19" extent="1-1"/>
+<wire x1="13.98" y1="11.01" x2="19.4" y2="29.8" width="0" layer="19" extent="16-16"/>
+<wire x1="19.2" y1="7.8" x2="13.98" y2="11.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DEBOUNCER_11">
 <contactref element="RN101" pad="4"/>
 <contactref element="IC101" pad="1"/>
 <contactref element="IC101" pad="2"/>
 <contactref element="RN103" pad="3"/>
-<wire x1="52.98" y1="41.59" x2="55.52" y2="41.59" width="0.15" layer="16"/>
-<wire x1="55.52" y1="41.59" x2="55.52" y2="41.08" width="0.15" layer="1"/>
-<wire x1="55.52" y1="41.08" x2="58" y2="38.6" width="0.15" layer="1"/>
-<wire x1="58" y1="38.6" x2="58" y2="37.73" width="0.15" layer="1"/>
-<wire x1="58" y1="37.73" x2="58.13" y2="37.6" width="0.15" layer="1"/>
-<wire x1="55.59" y1="33.8" x2="55.59" y2="34.39" width="0.15" layer="1"/>
-<wire x1="55.59" y1="34.39" x2="58.2" y2="37" width="0.15" layer="1"/>
-<wire x1="58.2" y1="37" x2="58.2" y2="37.53" width="0.15" layer="1"/>
-<wire x1="58.2" y1="37.53" x2="58.13" y2="37.6" width="0.15" layer="1"/>
+<wire x1="13.98" y1="26.59" x2="16.52" y2="26.59" width="0.15" layer="16"/>
+<wire x1="16.52" y1="26.59" x2="16.52" y2="26.08" width="0.15" layer="1"/>
+<wire x1="16.52" y1="26.08" x2="19" y2="23.6" width="0.15" layer="1"/>
+<wire x1="19" y1="23.6" x2="19" y2="22.73" width="0.15" layer="1"/>
+<wire x1="19" y1="22.73" x2="19.13" y2="22.6" width="0.15" layer="1"/>
+<wire x1="16.59" y1="18.8" x2="16.59" y2="19.39" width="0.15" layer="1"/>
+<wire x1="16.59" y1="19.39" x2="19.2" y2="22" width="0.15" layer="1"/>
+<wire x1="19.2" y1="22" x2="19.2" y2="22.53" width="0.15" layer="1"/>
+<wire x1="19.2" y1="22.53" x2="19.13" y2="22.6" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_10">
 <contactref element="RN101" pad="2"/>
 <contactref element="RN101" pad="3"/>
 <contactref element="C101" pad="+"/>
-<wire x1="55.59" y1="37.6" x2="53.05" y2="37.6" width="0.15" layer="1"/>
-<wire x1="53.05" y1="37.6" x2="53.05" y2="38.45" width="0.15" layer="1"/>
-<wire x1="53.05" y1="38.45" x2="54.2" y2="39.6" width="0.15" layer="1"/>
-<wire x1="54.2" y1="39.6" x2="54.2" y2="43.6" width="0.15" layer="1"/>
-<wire x1="54.2" y1="43.6" x2="54" y2="43.8" width="0.15" layer="1"/>
-<via x="54" y="43.8" extent="1-16" drill="0.3"/>
-<wire x1="54" y1="43.8" x2="47.73" y2="43.8" width="0.15" layer="16"/>
-<wire x1="47.73" y1="43.8" x2="47.4" y2="43.47" width="0.15" layer="16"/>
+<wire x1="16.59" y1="22.6" x2="14.05" y2="22.6" width="0.15" layer="1"/>
+<wire x1="14.05" y1="22.6" x2="14.05" y2="23.45" width="0.15" layer="1"/>
+<wire x1="14.05" y1="23.45" x2="15.2" y2="24.6" width="0.15" layer="1"/>
+<wire x1="15.2" y1="24.6" x2="15.2" y2="28.6" width="0.15" layer="1"/>
+<wire x1="15.2" y1="28.6" x2="15" y2="28.8" width="0.15" layer="1"/>
+<via x="15" y="28.8" extent="1-16" drill="0.3"/>
+<wire x1="15" y1="28.8" x2="8.73" y2="28.8" width="0.15" layer="16"/>
+<wire x1="8.73" y1="28.8" x2="8.4" y2="28.47" width="0.15" layer="16"/>
 </signal>
 <signal name="DEBOUNCER_20">
 <contactref element="RN101" pad="6"/>
 <contactref element="RN101" pad="7"/>
 <contactref element="C102" pad="+"/>
-<wire x1="65.75" y1="37.6" x2="63.21" y2="37.6" width="0.15" layer="16"/>
-<wire x1="63.21" y1="37.6" x2="63.21" y2="38.19" width="0.15" layer="16"/>
-<wire x1="63.21" y1="38.19" x2="61.8" y2="39.6" width="0.15" layer="16"/>
-<wire x1="61.8" y1="39.6" x2="49.8" y2="39.6" width="0.15" layer="16"/>
-<wire x1="49.8" y1="39.6" x2="47.8" y2="37.6" width="0.15" layer="16"/>
-<wire x1="47.8" y1="37.6" x2="45.07" y2="37.6" width="0.15" layer="16"/>
-<wire x1="45.07" y1="37.6" x2="45" y2="37.67" width="0.15" layer="16"/>
+<wire x1="26.75" y1="22.6" x2="24.21" y2="22.6" width="0.15" layer="16"/>
+<wire x1="24.21" y1="22.6" x2="24.21" y2="23.19" width="0.15" layer="16"/>
+<wire x1="24.21" y1="23.19" x2="22.8" y2="24.6" width="0.15" layer="16"/>
+<wire x1="22.8" y1="24.6" x2="10.8" y2="24.6" width="0.15" layer="16"/>
+<wire x1="10.8" y1="24.6" x2="8.8" y2="22.6" width="0.15" layer="16"/>
+<wire x1="8.8" y1="22.6" x2="6.07" y2="22.6" width="0.15" layer="16"/>
+<wire x1="6.07" y1="22.6" x2="6" y2="22.67" width="0.15" layer="16"/>
 </signal>
 <signal name="DEBOUNCER_12">
 <contactref element="IC101" pad="3"/>
 <contactref element="IC101" pad="4"/>
 <contactref element="IC101" pad="5"/>
-<wire x1="58.06" y1="41.59" x2="60.6" y2="41.59" width="0.15" layer="1"/>
-<wire x1="60.6" y1="41.59" x2="63.14" y2="41.59" width="0.15" layer="1"/>
+<wire x1="19.06" y1="26.59" x2="21.6" y2="26.59" width="0.15" layer="1"/>
+<wire x1="21.6" y1="26.59" x2="24.14" y2="26.59" width="0.15" layer="1"/>
 </signal>
 <signal name="DEBOUNCER_42">
 <contactref element="IC102" pad="11"/>
 <contactref element="IC102" pad="10"/>
 <contactref element="IC102" pad="9"/>
-<wire x1="65.68" y1="26.01" x2="63.14" y2="26.01" width="0.15" layer="16"/>
-<wire x1="60.6" y1="26.01" x2="63.14" y2="26.01" width="0.15" layer="16"/>
+<wire x1="26.68" y1="11.01" x2="24.14" y2="11.01" width="0.15" layer="16"/>
+<wire x1="21.6" y1="11.01" x2="24.14" y2="11.01" width="0.15" layer="16"/>
 </signal>
 <signal name="DEBOUNCER_21">
 <contactref element="RN101" pad="8"/>
 <contactref element="IC101" pad="13"/>
 <contactref element="IC101" pad="12"/>
 <contactref element="RN103" pad="1"/>
-<wire x1="55.52" y1="49.21" x2="58.06" y2="49.21" width="0.15" layer="1"/>
-<wire x1="68.29" y1="37.6" x2="68.29" y2="38.51" width="0.15" layer="1"/>
-<wire x1="68.29" y1="38.51" x2="67" y2="39.8" width="0.15" layer="1"/>
-<wire x1="67" y1="39.8" x2="67" y2="50.8" width="0.15" layer="1"/>
-<wire x1="67" y1="50.8" x2="66.4" y2="51.4" width="0.15" layer="1"/>
-<wire x1="66.4" y1="51.4" x2="58.4" y2="51.4" width="0.15" layer="1"/>
-<wire x1="58.4" y1="51.4" x2="58" y2="51" width="0.15" layer="1"/>
-<wire x1="58" y1="51" x2="58" y2="49.27" width="0.15" layer="1"/>
-<wire x1="58" y1="49.27" x2="58.06" y2="49.21" width="0.15" layer="1"/>
-<wire x1="55.52" y1="49.21" x2="55.52" y2="45.52" width="0.15" layer="1"/>
-<wire x1="55.52" y1="45.52" x2="54.6" y2="44.6" width="0.15" layer="1"/>
-<wire x1="54.6" y1="44.6" x2="52.8" y2="44.6" width="0.15" layer="1"/>
-<wire x1="52.8" y1="44.6" x2="51.8" y2="43.6" width="0.15" layer="1"/>
-<wire x1="51.8" y1="43.6" x2="51.8" y2="35.6" width="0.15" layer="1"/>
-<wire x1="51.8" y1="35.6" x2="50.6" y2="34.4" width="0.15" layer="1"/>
-<wire x1="50.6" y1="34.4" x2="50.6" y2="33.89" width="0.15" layer="1"/>
-<wire x1="50.6" y1="33.89" x2="50.51" y2="33.8" width="0.15" layer="1"/>
+<wire x1="16.52" y1="34.21" x2="19.06" y2="34.21" width="0.15" layer="1"/>
+<wire x1="29.29" y1="22.6" x2="29.29" y2="23.51" width="0.15" layer="1"/>
+<wire x1="29.29" y1="23.51" x2="28" y2="24.8" width="0.15" layer="1"/>
+<wire x1="28" y1="24.8" x2="28" y2="35.8" width="0.15" layer="1"/>
+<wire x1="28" y1="35.8" x2="27.4" y2="36.4" width="0.15" layer="1"/>
+<wire x1="27.4" y1="36.4" x2="19.4" y2="36.4" width="0.15" layer="1"/>
+<wire x1="19.4" y1="36.4" x2="19" y2="36" width="0.15" layer="1"/>
+<wire x1="19" y1="36" x2="19" y2="34.27" width="0.15" layer="1"/>
+<wire x1="19" y1="34.27" x2="19.06" y2="34.21" width="0.15" layer="1"/>
+<wire x1="16.52" y1="34.21" x2="16.52" y2="30.52" width="0.15" layer="1"/>
+<wire x1="16.52" y1="30.52" x2="15.6" y2="29.6" width="0.15" layer="1"/>
+<wire x1="15.6" y1="29.6" x2="13.8" y2="29.6" width="0.15" layer="1"/>
+<wire x1="13.8" y1="29.6" x2="12.8" y2="28.6" width="0.15" layer="1"/>
+<wire x1="12.8" y1="28.6" x2="12.8" y2="20.6" width="0.15" layer="1"/>
+<wire x1="12.8" y1="20.6" x2="11.6" y2="19.4" width="0.15" layer="1"/>
+<wire x1="11.6" y1="19.4" x2="11.6" y2="18.89" width="0.15" layer="1"/>
+<wire x1="11.6" y1="18.89" x2="11.51" y2="18.8" width="0.15" layer="1"/>
 </signal>
 </signals>
 </board>
