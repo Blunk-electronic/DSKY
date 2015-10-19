@@ -3656,6 +3656,15 @@ date: 2013-12-03</description>
 <part name="GND60" library="be_supply" deviceset="GND" device=""/>
 <part name="GND61" library="be_supply" deviceset="GND" device=""/>
 <part name="GND62" library="be_supply" deviceset="GND" device=""/>
+<part name="R1" library="be_rcl" deviceset="R_EU" device="_S_0805" value="1k5">
+<attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_1k5"/>
+</part>
+<part name="LED1" library="be_opt" deviceset="LED" device="_S_0805" value="red">
+<attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_red"/>
+</part>
+<part name="LED2" library="be_opt" deviceset="LED" device="_S_0805" value="red">
+<attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_red"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5932,6 +5941,15 @@ date: 2013-12-03</description>
 <attribute name="NAME" x="170.815" y="105.41" size="1.27" layer="95" font="fixed"/>
 <attribute name="VALUE" x="170.815" y="102.235" size="1.27" layer="96" font="fixed"/>
 </instance>
+<instance part="R1" gate="G$1" x="134.62" y="142.24"/>
+<instance part="LED1" gate="G$1" x="170.18" y="142.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="170.815" y="143.51" size="1.27" layer="95" font="fixed"/>
+<attribute name="VALUE" x="170.815" y="140.335" size="1.27" layer="96" font="fixed"/>
+</instance>
+<instance part="LED2" gate="G$1" x="182.88" y="142.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="183.515" y="143.51" size="1.27" layer="95" font="fixed"/>
+<attribute name="VALUE" x="183.515" y="140.335" size="1.27" layer="96" font="fixed"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5951,6 +5969,10 @@ date: 2013-12-03</description>
 <wire x1="129.54" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="127" y1="134.62" x2="127" y2="127" width="0.1524" layer="91"/>
 <junction x="127" y="127"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="127" y1="142.24" x2="127" y2="134.62" width="0.1524" layer="91"/>
+<junction x="127" y="134.62"/>
 </segment>
 </net>
 <net name="DRV_9_LED_2" class="0">
@@ -6151,14 +6173,14 @@ date: 2013-12-03</description>
 <pinref part="LED902" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="DRV_9_LED_R1BB" class="0">
 <segment>
 <pinref part="LED911" gate="G$1" pin="C"/>
 <pinref part="LED902" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="DRV_9_LED_R1AA" class="0">
 <segment>
 <pinref part="LED910" gate="G$1" pin="C"/>
 <pinref part="LED901" gate="G$1" pin="A"/>
@@ -6210,6 +6232,25 @@ date: 2013-12-03</description>
 <pinref part="LED908" gate="G$1" pin="A"/>
 <pinref part="LED909" gate="G$1" pin="A"/>
 <label x="208.28" y="127" size="1.27" layer="95" font="fixed" xref="yes"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="185.42" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="142.24" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
+<junction x="193.04" y="134.62"/>
+</segment>
+</net>
+<net name="DRV_9_LED_R1C" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="139.7" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<label x="142.875" y="142.875" size="1.27" layer="95" font="fixed"/>
+</segment>
+</net>
+<net name="DRV_9_LED_R1CC" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="172.72" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
