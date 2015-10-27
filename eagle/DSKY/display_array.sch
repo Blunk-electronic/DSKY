@@ -602,8 +602,8 @@ date: 2014-10-13</description>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 <pad name="+" x="-1.27" y="0" drill="0.8" diameter="1.6002"/>
 <pad name="-" x="1.27" y="0" drill="0.8" diameter="1.6002" shape="octagon"/>
-<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
 <circle x="0" y="0" radius="3.807884375" width="0.15" layer="39"/>
 </package>
 <package name="T_RADIAL_5MM_GRID_2.54MM">
@@ -622,8 +622,8 @@ date: 2015-01-15</description>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 <pad name="+" x="-1.27" y="0" drill="0.8" diameter="1.6002"/>
 <pad name="-" x="1.27" y="0" drill="0.8" diameter="1.6002" shape="octagon"/>
-<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
 <circle x="0" y="0" radius="2.8" width="0.15" layer="39"/>
 </package>
 <package name="T_RADIAL_10MM_GRID_5MM">
@@ -2324,11 +2324,11 @@ drawn: Mario Blunk / Blunk electronic</description>
 <wire x1="3.75" y1="-2.5" x2="3.25" y2="-3" width="0.15" layer="51"/>
 </package>
 <package name="T_TEST_POINT_SMALL">
-<description>drawn: Mario Blunk / Blunk electronic&lt;br&gt;
-date: 2013-03-28</description>
+<description>edited: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2015-10-27</description>
 <pad name="1" x="0" y="0" drill="0.8" shape="square"/>
-<text x="-1.5" y="2.5" size="1" layer="51" font="vector" ratio="13">&gt;NAME</text>
-<text x="-1.5" y="1" size="1" layer="51" font="vector" ratio="13">&gt;VALUE</text>
+<text x="-1.5" y="2.5" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.5" y="1" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.15" layer="51"/>
 <wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.15" layer="51"/>
 <circle x="0" y="0" radius="0.5" width="0.15" layer="51"/>
@@ -2342,6 +2342,32 @@ date: 2014-09-03</description>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.15" layer="51"/>
 <wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.15" layer="51"/>
 <circle x="0" y="0" radius="0.5" width="0.15" layer="51"/>
+</package>
+<package name="T_MALE_3X1_VERTICAL">
+<description>male header package 3x1&lt;br&gt;
+drawn: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2013-03-20</description>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="4.445" x2="-0.635" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="5.08" x2="1.27" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="4.445" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="3.81" drill="1.016" shape="square" rot="R90"/>
+<pad name="2" x="0" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-1.07" y="7.04" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.07" y="5.54" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="3.556" x2="0.254" y2="4.064" layer="51"/>
+<wire x1="-1.6" y1="5.4" x2="1.6" y2="5.4" width="0.1" layer="39"/>
+<wire x1="1.6" y1="5.4" x2="1.6" y2="-2.8" width="0.1" layer="39"/>
+<wire x1="1.6" y1="-2.8" x2="-1.6" y2="-2.8" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-2.8" x2="-1.6" y2="5.4" width="0.1" layer="39"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<text x="1.9" y="4.8" size="0.8" layer="21" font="vector" ratio="13" rot="R90">1</text>
 </package>
 </packages>
 <symbols>
@@ -2432,8 +2458,25 @@ date: 2015-10-16</description>
 <wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
 <circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
-<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <text x="0.635" y="3.175" size="1.27" layer="95" font="fixed" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="MALE_1X3">
+<description>male connector symbol 1x3 &lt;br&gt;
+drawn: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2013-07-19&lt;br&gt;</description>
+<wire x1="1.27" y1="-5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-3.81" y="7.62" size="1.27" layer="95" font="fixed">&gt;NAME</text>
+<text x="-3.81" y="5.715" size="1.27" layer="96" font="fixed">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2538,7 +2581,7 @@ drawn: Mario Blunk / Blunk electronic</description>
 <devices>
 <device name="_T_SMALL" package="T_TEST_POINT_SMALL">
 <connects>
-<connect gate="G$1" pin="MP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2553,7 +2596,7 @@ drawn: Mario Blunk / Blunk electronic</description>
 </device>
 <device name="_T_LARGE" package="T_TEST_POINT_LARGE">
 <connects>
-<connect gate="G$1" pin="MP" pad="1"/>
+<connect gate="G$1" pin="TP" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2561,6 +2604,31 @@ drawn: Mario Blunk / Blunk electronic</description>
 <attribute name="COMMISSIONED" value="2014-09-03"/>
 <attribute name="FUNCTION" value="" constant="no"/>
 <attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" constant="no"/>
+<attribute name="PART_CODE_EXT" value="" constant="no"/>
+<attribute name="UPDATED" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MALE_1X3" prefix="X">
+<description>drawn: Mario Blunk / Blunk electronic&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="MALE_1X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="T_MALE_3X1_VERTICAL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="YES"/>
+<attribute name="COMMISSIONED" value="2013-08-30"/>
+<attribute name="FUNCTION" value="" constant="no"/>
+<attribute name="PART_CODE_BEL" value="X_PAC_T_MALE_1X3_VERTICAL_GRID_2.54MM" constant="no"/>
 <attribute name="PART_CODE_EXT" value="" constant="no"/>
 <attribute name="UPDATED" value=""/>
 </technology>
@@ -3108,8 +3176,8 @@ drawn: Mario Blunk / Blunk electronic&lt;br&gt;</description>
 <description>reference marks required for automated assembly</description>
 <packages>
 <package name="CROSSHAIR">
-<description>drawn: Mario Blunk / Blunk electronic&lt;br&gt;
-date: 2013-12-03</description>
+<description>edited: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2015-10-27</description>
 <wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="1"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="1"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="1"/>
@@ -3136,8 +3204,8 @@ date: 2013-12-03</description>
 <wire x1="0" y1="2" x2="0" y2="-2" width="0.15" layer="51"/>
 <wire x1="0" y1="2" x2="0" y2="-2" width="0.15" layer="52"/>
 <wire x1="-2" y1="0" x2="2" y2="0" width="0.15" layer="52"/>
-<text x="-1.5" y="-4" size="0.7" layer="51" font="vector" ratio="13">&gt;NAME</text>
-<text x="1.5" y="-4" size="0.7" layer="52" font="vector" ratio="13" rot="MR0">&gt;NAME</text>
+<text x="-1.5" y="-4" size="0.7" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="1.5" y="-4" size="0.7" layer="26" font="vector" ratio="13" rot="MR0">&gt;NAME</text>
 </package>
 <package name="DOT">
 <description>drawn: Mario Blunk / Blunk electronic&lt;br&gt;
@@ -3665,8 +3733,8 @@ date: 2013-12-03</description>
 <part name="GND54" library="be_supply" deviceset="GND" device=""/>
 <part name="GND55" library="be_supply" deviceset="GND" device=""/>
 <part name="GND56" library="be_supply" deviceset="GND" device=""/>
-<part name="TP1602" library="be_con_jump" deviceset="TEST_POINT" device="_T_LARGE"/>
-<part name="TP1601" library="be_con_jump" deviceset="TEST_POINT" device="_T_LARGE"/>
+<part name="TP1606" library="be_con_jump" deviceset="TEST_POINT" device="_T_LARGE"/>
+<part name="TP1605" library="be_con_jump" deviceset="TEST_POINT" device="_T_LARGE"/>
 <part name="D1601" library="be_diode" deviceset="SINGLE" device="_T_DO204_GRID_10MM" value="BAT48">
 <attribute name="PART_CODE_BEL" value="D_PAC_T_DO204_GRID_10mm_VAL_BAT48"/>
 </part>
@@ -3707,6 +3775,48 @@ date: 2013-12-03</description>
 <part name="C1602" library="be_rcl" deviceset="C_EU" device="_S_0805" value="100n">
 <attribute name="PART_CODE_BEL" value="C_PAC_S_0805_VAL_100n"/>
 </part>
+<part name="TP1402" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL">
+<attribute name="FUNCTION" value="SDA"/>
+</part>
+<part name="TP1401" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL">
+<attribute name="FUNCTION" value="SCL"/>
+</part>
+<part name="X1403" library="be_con_jump" deviceset="MALE_1X3" device="">
+<attribute name="FUNCTION" value="DEBUG &amp; INSTRUMENTATION"/>
+</part>
+<part name="GND63" library="be_supply" deviceset="GND" device=""/>
+<part name="TP1607" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1604" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1601" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1603" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1602" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1107" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1106" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1105" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1104" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1103" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1102" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1101" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1114" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1113" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1112" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1111" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1110" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1109" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1108" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1121" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1120" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1119" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1118" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1117" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1116" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1115" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1124" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1123" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1122" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1127" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1126" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
+<part name="TP1125" library="be_con_jump" deviceset="TEST_POINT" device="_T_SMALL" value="TEST_POINT_T_SMALL"/>
 </parts>
 <sheets>
 <sheet>
@@ -6558,6 +6668,87 @@ date: 2013-12-03</description>
 <instance part="GND60" gate="1" x="45.72" y="15.24" rot="R270"/>
 <instance part="GND61" gate="1" x="45.72" y="22.86" rot="R270"/>
 <instance part="GND62" gate="1" x="10.16" y="22.86" rot="R270"/>
+<instance part="TP1107" gate="G$1" x="22.86" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="66.675" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1106" gate="G$1" x="22.86" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="71.755" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1105" gate="G$1" x="22.86" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="76.835" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1104" gate="G$1" x="22.86" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="81.915" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1103" gate="G$1" x="22.86" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="86.995" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1102" gate="G$1" x="22.86" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="92.075" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1101" gate="G$1" x="22.86" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.685" y="97.155" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1114" gate="G$1" x="38.1" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="66.675" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1113" gate="G$1" x="38.1" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="71.755" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1112" gate="G$1" x="38.1" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="76.835" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1111" gate="G$1" x="38.1" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="81.915" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1110" gate="G$1" x="38.1" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="86.995" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1109" gate="G$1" x="38.1" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="92.075" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1108" gate="G$1" x="38.1" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="97.155" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1121" gate="G$1" x="53.34" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="66.675" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1120" gate="G$1" x="53.34" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="71.755" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1119" gate="G$1" x="53.34" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="76.835" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1118" gate="G$1" x="53.34" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="81.915" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1117" gate="G$1" x="53.34" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="86.995" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1116" gate="G$1" x="53.34" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="92.075" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1115" gate="G$1" x="53.34" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.165" y="97.155" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1124" gate="G$1" x="76.2" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="86.995" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1123" gate="G$1" x="76.2" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="92.075" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1122" gate="G$1" x="76.2" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="97.155" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1127" gate="G$1" x="76.2" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="71.755" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1126" gate="G$1" x="76.2" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="76.835" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1125" gate="G$1" x="76.2" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.025" y="81.915" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7274,6 +7465,12 @@ date: 2013-12-03</description>
 <instance part="GND40" gate="1" x="76.2" y="124.46"/>
 <instance part="D1401" gate="G$1" x="53.34" y="58.42" rot="R90"/>
 <instance part="GND58" gate="1" x="53.34" y="50.8" rot="MR0"/>
+<instance part="TP1402" gate="G$1" x="228.6" y="55.88" rot="R270"/>
+<instance part="TP1401" gate="G$1" x="228.6" y="60.96" rot="R270"/>
+<instance part="X1403" gate="G$1" x="228.6" y="76.2" rot="R180">
+<attribute name="FUNCTION" x="203.2" y="83.82" size="2.54" layer="96" font="fixed"/>
+</instance>
+<instance part="GND63" gate="1" x="213.36" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -7360,6 +7557,11 @@ date: 2013-12-03</description>
 <pinref part="D1401" gate="G$1" pin="A"/>
 <pinref part="GND58" gate="1" pin="GND"/>
 <wire x1="53.34" y1="55.88" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1403" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="73.66" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="GND63" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="CTRL_STROBE#" class="0">
@@ -7481,6 +7683,11 @@ date: 2013-12-03</description>
 <label x="160.655" y="155.575" size="1.27" layer="95" font="fixed"/>
 <pinref part="RN1401" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<wire x1="213.36" y1="60.96" x2="226.06" y2="60.96" width="0.1524" layer="91"/>
+<label x="213.995" y="61.595" size="1.27" layer="95" font="fixed"/>
+<pinref part="TP1401" gate="G$1" pin="TP"/>
+</segment>
 </net>
 <net name="CTRL_SDA" class="0">
 <segment>
@@ -7492,6 +7699,11 @@ date: 2013-12-03</description>
 <wire x1="160.02" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
 <label x="160.655" y="153.035" size="1.27" layer="95" font="fixed"/>
 <pinref part="RN1401" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="213.36" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<label x="213.995" y="56.515" size="1.27" layer="95" font="fixed"/>
+<pinref part="TP1402" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="P5V" class="1">
@@ -7526,6 +7738,11 @@ date: 2013-12-03</description>
 <pinref part="D1401" gate="G$1" pin="C"/>
 <wire x1="53.34" y1="60.96" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
 <junction x="53.34" y="66.04"/>
+</segment>
+<segment>
+<pinref part="X1403" gate="G$1" pin="3"/>
+<wire x1="223.52" y1="78.74" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
+<label x="213.995" y="79.375" size="1.27" layer="95" font="fixed"/>
 </segment>
 </net>
 <net name="P5V_LED" class="0">
@@ -7804,10 +8021,10 @@ date: 2013-12-03</description>
 <instance part="GND54" gate="1" x="60.96" y="58.42"/>
 <instance part="GND55" gate="1" x="83.82" y="58.42"/>
 <instance part="GND56" gate="1" x="30.48" y="58.42"/>
-<instance part="TP1602" gate="G$1" x="96.52" y="106.68" smashed="yes" rot="R270">
+<instance part="TP1606" gate="G$1" x="96.52" y="106.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="99.695" y="106.045" size="1.27" layer="95" font="fixed"/>
 </instance>
-<instance part="TP1601" gate="G$1" x="96.52" y="127" smashed="yes" rot="R270">
+<instance part="TP1605" gate="G$1" x="96.52" y="127" smashed="yes" rot="R270">
 <attribute name="NAME" x="99.695" y="126.365" size="1.27" layer="95" font="fixed"/>
 </instance>
 <instance part="D1601" gate="G$1" x="60.96" y="116.84" rot="R180"/>
@@ -7817,6 +8034,21 @@ date: 2013-12-03</description>
 <instance part="C1601" gate="G$1" x="15.24" y="68.58"/>
 <instance part="GND57" gate="1" x="15.24" y="58.42"/>
 <instance part="C1602" gate="G$1" x="30.48" y="81.28"/>
+<instance part="TP1607" gate="G$1" x="116.84" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="116.205" y="85.725" size="1.27" layer="95" font="fixed" rot="R270"/>
+</instance>
+<instance part="TP1604" gate="G$1" x="86.36" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="89.535" y="73.025" size="1.27" layer="95" font="fixed"/>
+</instance>
+<instance part="TP1601" gate="G$1" x="27.94" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.765" y="122.555" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1603" gate="G$1" x="58.42" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.245" y="66.675" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
+<instance part="TP1602" gate="G$1" x="38.1" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.925" y="147.955" size="1.27" layer="95" font="fixed" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7825,7 +8057,10 @@ date: 2013-12-03</description>
 <segment>
 <pinref part="IC1601" gate="G$1" pin="GND"/>
 <pinref part="GND54" gate="1" pin="GND"/>
-<wire x1="60.96" y1="60.96" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="60.96" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="TP1603" gate="G$1" pin="TP"/>
+<wire x1="60.96" y1="66.04" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<junction x="60.96" y="66.04"/>
 </segment>
 <segment>
 <pinref part="C1604" gate="G$1" pin="2"/>
@@ -7854,6 +8089,7 @@ date: 2013-12-03</description>
 <wire x1="83.82" y1="73.66" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 <junction x="83.82" y="73.66"/>
+<pinref part="TP1604" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="TIM_OUT" class="0">
@@ -7865,6 +8101,7 @@ date: 2013-12-03</description>
 <wire x1="116.84" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
 <junction x="116.84" y="91.44"/>
 <label x="121.285" y="92.075" size="1.27" layer="95" font="fixed"/>
+<pinref part="TP1607" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="T1601" gate="G$1" pin="G"/>
@@ -7896,6 +8133,8 @@ date: 2013-12-03</description>
 <pinref part="C1602" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="83.82" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
 <junction x="30.48" y="91.44"/>
+<pinref part="TP1601" gate="G$1" pin="TP"/>
+<junction x="30.48" y="121.92"/>
 </segment>
 </net>
 <net name="TIM_3" class="0">
@@ -7910,7 +8149,7 @@ date: 2013-12-03</description>
 <wire x1="81.28" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="106.68" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="81.28" y="106.68"/>
-<pinref part="TP1602" gate="G$1" pin="MP"/>
+<pinref part="TP1606" gate="G$1" pin="TP"/>
 <junction x="93.98" y="106.68"/>
 <pinref part="D1601" gate="G$1" pin="A"/>
 <wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
@@ -7929,7 +8168,7 @@ date: 2013-12-03</description>
 <wire x1="93.98" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
 <junction x="93.98" y="147.32"/>
 <label x="137.16" y="147.955" size="1.27" layer="95" font="fixed"/>
-<pinref part="TP1601" gate="G$1" pin="MP"/>
+<pinref part="TP1605" gate="G$1" pin="TP"/>
 <junction x="93.98" y="127"/>
 <pinref part="R1603" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
@@ -7939,6 +8178,8 @@ date: 2013-12-03</description>
 <wire x1="40.64" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="101.6" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <junction x="40.64" y="101.6"/>
+<pinref part="TP1602" gate="G$1" pin="TP"/>
+<junction x="40.64" y="147.32"/>
 </segment>
 <segment>
 <pinref part="T1601" gate="G$1" pin="S"/>
@@ -7969,7 +8210,7 @@ date: 2013-12-03</description>
 <label x="198.12" y="60.96" size="1.27" layer="95" font="fixed" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TIM_45" class="0">
 <segment>
 <pinref part="C1603" gate="G$1" pin="1"/>
 <pinref part="C1602" gate="G$1" pin="2"/>
@@ -7980,6 +8221,33 @@ date: 2013-12-03</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,11,25.4,66.04,TP1107,TP,,,,"/>
+<approved hash="101,11,25.4,71.12,TP1106,TP,,,,"/>
+<approved hash="101,11,25.4,76.2,TP1105,TP,,,,"/>
+<approved hash="101,11,25.4,81.28,TP1104,TP,,,,"/>
+<approved hash="101,11,25.4,86.36,TP1103,TP,,,,"/>
+<approved hash="101,11,25.4,91.44,TP1102,TP,,,,"/>
+<approved hash="101,11,25.4,96.52,TP1101,TP,,,,"/>
+<approved hash="101,11,40.64,66.04,TP1114,TP,,,,"/>
+<approved hash="101,11,40.64,71.12,TP1113,TP,,,,"/>
+<approved hash="101,11,40.64,76.2,TP1112,TP,,,,"/>
+<approved hash="101,11,40.64,81.28,TP1111,TP,,,,"/>
+<approved hash="101,11,40.64,86.36,TP1110,TP,,,,"/>
+<approved hash="101,11,40.64,91.44,TP1109,TP,,,,"/>
+<approved hash="101,11,40.64,96.52,TP1108,TP,,,,"/>
+<approved hash="101,11,55.88,66.04,TP1121,TP,,,,"/>
+<approved hash="101,11,55.88,71.12,TP1120,TP,,,,"/>
+<approved hash="101,11,55.88,76.2,TP1119,TP,,,,"/>
+<approved hash="101,11,55.88,81.28,TP1118,TP,,,,"/>
+<approved hash="101,11,55.88,86.36,TP1117,TP,,,,"/>
+<approved hash="101,11,55.88,91.44,TP1116,TP,,,,"/>
+<approved hash="101,11,55.88,96.52,TP1115,TP,,,,"/>
+<approved hash="101,11,78.74,86.36,TP1124,TP,,,,"/>
+<approved hash="101,11,78.74,91.44,TP1123,TP,,,,"/>
+<approved hash="101,11,78.74,96.52,TP1122,TP,,,,"/>
+<approved hash="101,11,78.74,71.12,TP1127,TP,,,,"/>
+<approved hash="101,11,78.74,76.2,TP1126,TP,,,,"/>
+<approved hash="101,11,78.74,81.28,TP1125,TP,,,,"/>
 <approved hash="104,1,63.5,116.84,IC101,VDD,P5V,,,"/>
 <approved hash="104,2,63.5,116.84,IC201,VDD,P5V,,,"/>
 <approved hash="104,3,63.5,116.84,IC301,VDD,P5V,,,"/>

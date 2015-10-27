@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.2" altunitdist="mm" altunit="mm"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -144,6 +144,11 @@
 <dimension x1="160" y1="0" x2="0" y2="0" x3="80" y3="-15" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="5" y1="5" x2="155" y2="5" x3="80" y3="-10" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="155" y1="95" x2="155" y2="5" x3="169" y3="50" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<text x="2" y="25" size="1.5" layer="22" font="vector" ratio="15" rot="MR90">GND</text>
+<text x="2" y="14" size="1.5" layer="22" font="vector" ratio="15" rot="MR90">P5V</text>
+<text x="61" y="25" size="1.5" layer="16" font="vector" ratio="13" rot="MR0">1</text>
+<text x="59" y="4" size="1.5" layer="16" font="vector" ratio="13" rot="MR0">1</text>
+<text x="5" y="13" size="1.5" layer="16" font="vector" ratio="13" rot="MR270">1</text>
 </plain>
 <libraries>
 <library name="be_rcl">
@@ -233,8 +238,8 @@ date: 2015-01-15</description>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 <pad name="+" x="-1.27" y="0" drill="0.8" diameter="1.6002"/>
 <pad name="-" x="1.27" y="0" drill="0.8" diameter="1.6002" shape="octagon"/>
-<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
 <circle x="0" y="0" radius="2.8" width="0.15" layer="39"/>
 </package>
 <package name="T_SIL9">
@@ -308,8 +313,8 @@ date: 2014-10-13</description>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
 <pad name="+" x="-1.27" y="0" drill="0.8" diameter="1.6002"/>
 <pad name="-" x="1.27" y="0" drill="0.8" diameter="1.6002" shape="octagon"/>
-<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<text x="3.75" y="0.25" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="3.75" y="-1.25" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
 <circle x="0" y="0" radius="3.807884375" width="0.15" layer="39"/>
 </package>
 </packages>
@@ -732,6 +737,42 @@ date: 2014-09-03</description>
 <wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.15" layer="51"/>
 <circle x="0" y="0" radius="0.5" width="0.15" layer="51"/>
 </package>
+<package name="T_TEST_POINT_SMALL">
+<description>edited: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2015-10-27</description>
+<pad name="1" x="0" y="0" drill="0.8" shape="square"/>
+<text x="-1.5" y="2.5" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.5" y="1" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.15" layer="51"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.15" layer="51"/>
+<circle x="0" y="0" radius="0.5" width="0.15" layer="51"/>
+</package>
+<package name="T_MALE_3X1_VERTICAL">
+<description>male header package 3x1&lt;br&gt;
+drawn: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2013-03-20</description>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="4.445" x2="-0.635" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="5.08" x2="0.635" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="5.08" x2="1.27" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="4.445" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="3.81" drill="1.016" shape="square" rot="R90"/>
+<pad name="2" x="0" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-1.07" y="7.04" size="1" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="-1.07" y="5.54" size="1" layer="27" font="vector" ratio="13">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="3.556" x2="0.254" y2="4.064" layer="51"/>
+<wire x1="-1.6" y1="5.4" x2="1.6" y2="5.4" width="0.1" layer="39"/>
+<wire x1="1.6" y1="5.4" x2="1.6" y2="-2.8" width="0.1" layer="39"/>
+<wire x1="1.6" y1="-2.8" x2="-1.6" y2="-2.8" width="0.1" layer="39"/>
+<wire x1="-1.6" y1="-2.8" x2="-1.6" y2="5.4" width="0.1" layer="39"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<text x="1.9" y="4.8" size="0.8" layer="21" font="vector" ratio="13" rot="R90">1</text>
+</package>
 </packages>
 </library>
 <library name="be_switch">
@@ -931,8 +972,8 @@ edited: 2014-04-22</description>
 <description>reference marks required for automated assembly</description>
 <packages>
 <package name="CROSSHAIR">
-<description>drawn: Mario Blunk / Blunk electronic&lt;br&gt;
-date: 2013-12-03</description>
+<description>edited: Mario Blunk / Blunk electronic&lt;br&gt;
+date: 2015-10-27</description>
 <wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="1"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.524" width="0.1524" layer="1"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.524" width="0.1524" layer="1"/>
@@ -959,8 +1000,8 @@ date: 2013-12-03</description>
 <wire x1="0" y1="2" x2="0" y2="-2" width="0.15" layer="51"/>
 <wire x1="0" y1="2" x2="0" y2="-2" width="0.15" layer="52"/>
 <wire x1="-2" y1="0" x2="2" y2="0" width="0.15" layer="52"/>
-<text x="-1.5" y="-4" size="0.7" layer="51" font="vector" ratio="13">&gt;NAME</text>
-<text x="1.5" y="-4" size="0.7" layer="52" font="vector" ratio="13" rot="MR0">&gt;NAME</text>
+<text x="-1.5" y="-4" size="0.7" layer="25" font="vector" ratio="13">&gt;NAME</text>
+<text x="1.5" y="-4" size="0.7" layer="26" font="vector" ratio="13" rot="MR0">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1275,7 +1316,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="133.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="133.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="133.45" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="119.1" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="119.3" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="110" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC101" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="114.4" y="43.6" smashed="yes">
@@ -1285,7 +1326,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="144.88" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="144.88" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="144.88" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="119.88" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="110.95" y="36.48" size="1" layer="25" font="vector" ratio="13"/>
 <attribute name="VALUE" x="109.517" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C101" library="be_rcl" package="S_0805" value="100n" x="112.2" y="42.8" smashed="yes" rot="MR0">
@@ -1325,7 +1366,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="121.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="121.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="121.95" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="107.6" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="107.8" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="98.5" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC201" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="102.9" y="43.6" smashed="yes">
@@ -1335,7 +1376,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="133.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="133.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="133.38" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="108.38" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="97.22" y="40.35" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="98.017" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C201" library="be_rcl" package="S_0805" value="100n" x="100.7" y="42.8" smashed="yes" rot="MR0">
@@ -1375,7 +1416,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="106.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="106.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="106.45" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="92.1" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="92.3" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="83" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC301" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="87.4" y="43.6" smashed="yes">
@@ -1425,7 +1466,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="94.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="94.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="94.95" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="80.6" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="80.8" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="71.5" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC401" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="75.9" y="43.6" smashed="yes">
@@ -1435,7 +1476,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="106.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="106.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="106.38" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="81.38" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="70.22" y="40.95" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="71.017" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C401" library="be_rcl" package="S_0805" value="100n" x="73.7" y="42.8" smashed="yes" rot="MR0">
@@ -1475,7 +1516,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="79.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="79.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="79.45" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="65.1" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="65.3" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="56" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC501" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="60.4" y="43.6" smashed="yes">
@@ -1525,7 +1566,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="67.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="67.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="67.95" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="53.6" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="53.8" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="44.5" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC601" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="48.9" y="43.6" smashed="yes">
@@ -1535,7 +1576,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="79.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="79.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="79.38" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="54.38" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="43.42" y="41.75" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="44.017" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C601" library="be_rcl" package="S_0805" value="100n" x="46.7" y="42.8" smashed="yes" rot="MR0">
@@ -1575,7 +1616,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="52.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="52.45" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="52.45" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="38.1" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="38.3" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="29" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC701" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="33.4" y="43.6" smashed="yes">
@@ -1585,7 +1626,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="63.88" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="63.88" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="63.88" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="38.88" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="38.88" y="45.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="VALUE" x="28.517" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C701" library="be_rcl" package="S_0805" value="100n" x="31.2" y="42.8" smashed="yes" rot="MR0">
@@ -1625,7 +1666,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-02" x="40.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="DIS_PAC_T_VQB71_VAL_VQB71" x="40.95" y="72.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="40.95" y="72.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="26.6" y="92.9" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="26.6" y="93.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="17.5" y="77.8" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC801" library="be_i2c" package="S_SOIC16" value="PCF8574T" x="21.9" y="43.6" smashed="yes">
@@ -1635,7 +1676,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="52.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574T" x="52.38" y="37.25" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="YES" x="52.38" y="37.25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.38" y="47.25" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
+<attribute name="NAME" x="16.42" y="40.55" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="17.017" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C801" library="be_rcl" package="S_0805" value="100n" x="19.7" y="42.8" smashed="yes" rot="MR0">
@@ -1655,7 +1696,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="126.4" y="27.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574AT" x="126.4" y="27.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
 <attribute name="BOM" value="YES" x="126.4" y="27.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
-<attribute name="NAME" x="120.812" y="40.517" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="121.517" y="36.388" size="1" layer="25" font="vector" ratio="13"/>
 <attribute name="VALUE" x="121.517" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C901" library="be_rcl" package="S_0805" value="100n" x="125" y="42.8" smashed="yes" rot="MR0">
@@ -1676,7 +1717,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_2k4" x="125.2" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="125.2" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="125.6" y="55.8" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="129.2" y="51.8" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="125.8" y="49.6" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R909" library="be_rcl" package="S_0805" value="2k4" x="127.4" y="53.8" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="127.4" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1686,7 +1727,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_2k4" x="127.4" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="127.4" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="127.8" y="55.8" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="131.4" y="51.8" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="127.8" y="49.6" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R908" library="be_rcl" package="S_0805" value="3k3" x="129.6" y="53.8" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="129.6" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1696,7 +1737,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_3k3" x="129.6" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="129.6" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="129.9" y="55.8" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="133.6" y="51.8" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="130.2" y="49.6" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R907" library="be_rcl" package="S_0805" value="2k2" x="131.8" y="53.8" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="131.8" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1706,7 +1747,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_2k2" x="131.8" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="131.8" y="53.8" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="132.2" y="55.8" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="135.8" y="51.8" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="132.4" y="49.6" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R906" library="be_rcl" package="S_0805" value="2k2" x="131.8" y="62.2" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="131.8" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1716,7 +1757,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_2k2" x="131.8" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="131.8" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="132.2" y="64.2" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="135.8" y="60.2" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="133.8" y="61.2" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R905" library="be_rcl" package="S_0805" value="750" x="129.6" y="62.2" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="129.6" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1726,7 +1767,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_750" x="129.6" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="129.6" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="130.1" y="64.2" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="133.6" y="60.2" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="129" y="64.6" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R904" library="be_rcl" package="S_0805" value="750" x="127.4" y="62.2" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="127.4" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1736,7 +1777,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_750" x="127.4" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="127.4" y="62.2" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="126.4" y="60.8" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="131.4" y="60.2" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="125.2" y="61" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
 <element name="R903" library="be_rcl" package="S_0805" value="1k5" x="68" y="79" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="68" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1746,7 +1787,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_1k5" x="68" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="68" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="70.1" y="77.3" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="72" y="77" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="67.4" y="76.8" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
 </element>
 <element name="LED903" library="be_opt" package="S_0805" value="red" x="68.15" y="86.75" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="68.15" y="86.75" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1776,7 +1817,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_yellow" x="124" y="83" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="124" y="83" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="83.3" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="82" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="122" y="84.2" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED908" library="be_opt" package="S_0805" value="red" x="124" y="79" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="124" y="79" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1786,7 +1827,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_red" x="124" y="79" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="124" y="79" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="79.5" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="78" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="122.4" y="80" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED904" library="be_opt" package="S_0805" value="green" x="124" y="95" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="124" y="95" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1796,7 +1837,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_green" x="124" y="95" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="124" y="95" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="95.3" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="94" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="121.6" y="96.2" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="R902" library="be_rcl" package="S_0805" value="1k5" x="95" y="79" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="95" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1806,7 +1847,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_1k5" x="95" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="95" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="96.9" y="77.4" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="99" y="77" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="94.8" y="76.8" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
 </element>
 <element name="LED902" library="be_opt" package="S_0805" value="red" x="95.15" y="86.75" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="91.15" y="85.75" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1816,7 +1857,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_red" x="91.15" y="85.75" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="91.15" y="85.75" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="96.45" y="87.75" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
-<attribute name="VALUE" x="96.15" y="87.75" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="93.75" y="87.85" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED912" library="be_opt" package="S_0805" value="red" x="95.15" y="83.25" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="99.15" y="82.25" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -1826,7 +1867,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_red" x="99.15" y="82.25" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="99.15" y="82.25" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="92.85" y="82.45" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
-<attribute name="VALUE" x="96.15" y="84.25" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="93.65" y="84.45" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED909" library="be_opt" package="S_0805" value="blue" x="124" y="75" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="128" y="76" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1836,7 +1877,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_blue" x="128" y="76" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="128" y="76" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="75.5" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="74" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="122.4" y="76" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED910" library="be_opt" package="S_0805" value="blue" x="124" y="71" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="120" y="72" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1846,7 +1887,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_blue" x="120" y="72" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="120" y="72" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="71.5" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="70" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="122.4" y="72" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED905" library="be_opt" package="S_0805" value="green" x="124" y="91" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="124" y="92" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1856,7 +1897,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_green" x="124" y="92" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="124" y="92" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="91.5" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="90" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="121.6" y="92.2" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="LED906" library="be_opt" package="S_0805" value="yellow" x="124" y="87" smashed="yes" rot="R270">
 <attribute name="UPDATED" value="" x="124" y="87" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
@@ -1866,7 +1907,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="LED_PAC_S_0805_VAL_yellow" x="124" y="87" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="BOM" value="YES" x="124" y="87" size="1" layer="27" font="vector" ratio="13" rot="R270" display="off"/>
 <attribute name="NAME" x="131.8" y="87.5" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="123" y="86" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
+<attribute name="VALUE" x="124.6" y="88.4" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="IC1001" library="be_i2c" package="S_SOIC16" value="PCF8574AT" x="138.4" y="43.6" smashed="yes">
 <attribute name="UPDATED" value="" x="138.4" y="43.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
@@ -1875,7 +1916,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-10-14" x="138.4" y="43.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
 <attribute name="PART_CODE_BEL" value="IC_PAC_S_SOIC16_VAL_PCF8574AT" x="138.4" y="43.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
 <attribute name="BOM" value="YES" x="138.4" y="43.6" size="1" layer="27" font="vector" ratio="13" display="off"/>
-<attribute name="NAME" x="132.812" y="40.517" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
+<attribute name="NAME" x="143.988" y="46.683" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="VALUE" x="133.517" y="45.342" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C1001" library="be_rcl" package="S_0805" value="100n" x="138.4" y="43.6" smashed="yes" rot="MR0">
@@ -1957,8 +1998,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="158.18" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="158.18" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="158.18" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="117.95" y="11.05" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="117.95" y="9.55" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="117.95" y="11.05" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="117.95" y="9.55" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="RN1201" library="be_rcl" package="T_SIL8" value="220" x="119.4" y="24.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="149.88" y="48.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1977,8 +2018,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="171.8" y="26.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="171.8" y="26.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="171.8" y="26.32" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="119.65" y="3.15" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="118.65" y="4.65" size="1" layer="27" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="119.65" y="3.15" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="VALUE" x="118.65" y="4.65" size="1" layer="27" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="RN1203" library="be_rcl" package="T_SIL8" value="4k7" x="123.2" y="24.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="161.3" y="48.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2007,8 +2048,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="177.8" y="37.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="177.8" y="37.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="177.8" y="37.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="128.35" y="2.45" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="129.75" y="4.15" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="128.35" y="2.45" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="129.75" y="4.15" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="RN1202" library="be_rcl" package="T_SIL8" value="220" x="127" y="24.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="172.72" y="48.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2027,8 +2068,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="182.8" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="182.8" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="182.8" y="55.18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="129.25" y="11.95" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="126.95" y="9.75" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="129.25" y="11.95" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="VALUE" x="126.95" y="9.75" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C1205" library="be_rcl" package="S_0805" value="100n" x="111.62" y="25.64" smashed="yes" rot="MR90">
 <attribute name="UPDATED" value="" x="53.2" y="40.88" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2067,8 +2108,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="120.18" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="120.18" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="120.18" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="79.95" y="10.45" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="79.95" y="8.75" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="79.95" y="10.45" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="79.95" y="8.75" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="RN1301" library="be_rcl" package="T_SIL8" value="220" x="81.4" y="23.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="111.88" y="47.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2087,8 +2128,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="132.8" y="25.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="132.8" y="25.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="132.8" y="25.32" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="76.35" y="1.45" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="83.15" y="1.55" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="76.35" y="1.45" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="83.15" y="1.55" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="RN1303" library="be_rcl" package="T_SIL8" value="4k7" x="85.2" y="23.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="123.3" y="47.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2117,8 +2158,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="138.8" y="36.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="138.8" y="36.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="138.8" y="36.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="89.35" y="1.65" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="90.75" y="3.15" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="89.35" y="1.65" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="90.75" y="3.15" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="RN1302" library="be_rcl" package="T_SIL8" value="220" x="89" y="23.4" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="2015-10-14" x="134.72" y="47.53" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2137,8 +2178,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2015-01-15" x="143.8" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_5mm_GRID_2.54mm_VAL_10u_Vmax_35V" x="143.8" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="143.8" y="54.18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="94.15" y="7.25" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="95.75" y="8.95" size="1" layer="27" font="vector" ratio="15"/>
+<attribute name="NAME" x="94.15" y="7.25" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="VALUE" x="95.75" y="8.95" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="C1305" library="be_rcl" package="S_0805" value="100n" x="73.62" y="24.64" smashed="yes" rot="MR90">
 <attribute name="UPDATED" value="" x="15.2" y="39.88" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2160,13 +2201,14 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="NAME" x="95.9" y="26.6" size="1" layer="26" font="vector" ratio="13" rot="MR90"/>
 <attribute name="VALUE" x="98.2" y="22.6" size="1" layer="28" font="vector" ratio="13" rot="MR90"/>
 </element>
-<element name="X1402" library="be_con_jump" package="T_MALE_2X13_VERTICAL_GRID_2.54MM" value="MALE_2X13-T-VERTICAL_2.54MM" x="44" y="9" rot="MR0">
+<element name="X1402" library="be_con_jump" package="T_MALE_2X13_VERTICAL_GRID_2.54MM" value="MALE_2X13-T-VERTICAL_2.54MM" x="44" y="9" smashed="yes" rot="MR0">
 <attribute name="UPDATED" value="" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="FUNCTION" value="CTRL" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="COMMISSIONED" value="2015-02-03" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="PART_CODE_BEL" value="X_PAC_T_MALE_2X13_VERTICAL_GRID_2.54mm" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="BOM" value="YES" x="44" y="9" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="NAME" x="61.77" y="7" size="1" layer="26" font="vector" ratio="13" rot="MR90"/>
 </element>
 <element name="RN1401" library="be_rcl" package="T_SIL9" value="10k" x="45" y="16" rot="R180">
 <attribute name="UPDATED" value="" x="45" y="16" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2184,15 +2226,14 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="RN_PAC_T_SIL9_VAL_" x="45" y="22" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="NO" x="45" y="22" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 </element>
-<element name="X1401" library="be_con_jump" package="T_WIRE_CLAMP_1X4_5MM" value="CLAMP_1X4-T-5MM" x="8.2" y="20.2" smashed="yes" rot="MR270">
-<attribute name="UPDATED" value="" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="PART_CODE_EXT" value="" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="FUNCTION" value="PWR P5V IN" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="COMMISSIONED" value="2014-02-26" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="PART_CODE_BEL" value="X_PAC_T_CLAMP_1X4_5mm" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="BOM" value="YES" x="8.2" y="20.2" size="1" layer="28" font="vector" ratio="13" rot="MR270" display="off"/>
-<attribute name="VALUE" x="2.4" y="27.2" size="1" layer="28" font="vector" ratio="13" rot="MR270"/>
-<attribute name="NAME" x="11.6" y="30.8" size="1" layer="26" font="vector" ratio="13" rot="MR0"/>
+<element name="X1401" library="be_con_jump" package="T_WIRE_CLAMP_1X4_5MM" value="CLAMP_1X4-T-5MM" x="9" y="21.4" smashed="yes" rot="MR90">
+<attribute name="UPDATED" value="" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="FUNCTION" value="PWR P5V IN" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="COMMISSIONED" value="2014-02-26" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="PART_CODE_BEL" value="X_PAC_T_CLAMP_1X4_5mm" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="BOM" value="YES" x="9" y="21.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="NAME" x="6.4" y="11" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
 </element>
 <element name="C1401" library="be_rcl" package="T_RADIAL_7MM_GRID_2.54MM" value="100u" x="5" y="37" smashed="yes" rot="MR90">
 <attribute name="UPDATED" value="" x="5" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
@@ -2201,8 +2242,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2014-10-13" x="5" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_7mm_GRID_2.54mm_VAL_100u_Vmax_35V" x="5" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="BOM" value="YES" x="5" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
-<attribute name="NAME" x="1.95" y="33.35" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="2.55" y="35.35" size="1" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="1.95" y="33.35" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
+<attribute name="VALUE" x="2.55" y="35.35" size="1" layer="28" font="vector" ratio="13" rot="MR90"/>
 </element>
 <element name="C1402" library="be_rcl" package="T_RADIAL_7MM_GRID_2.54MM" value="100u" x="14" y="37" smashed="yes" rot="MR90">
 <attribute name="UPDATED" value="" x="14" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
@@ -2211,8 +2252,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="COMMISSIONED" value="2014-10-13" x="14" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="PART_CODE_BEL" value="C_PAC_T_RADIAL_7mm_GRID_2.54mm_VAL_100u_Vmax_35V" x="14" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="BOM" value="YES" x="14" y="37" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
-<attribute name="NAME" x="11.15" y="33.15" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="11.55" y="35.15" size="1" layer="28" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="11.15" y="33.15" size="1" layer="26" font="vector" ratio="13" rot="MR180"/>
+<attribute name="VALUE" x="11.55" y="35.15" size="1" layer="28" font="vector" ratio="13" rot="MR90"/>
 </element>
 <element name="R1401" library="be_rcl" package="S_0805" value="220" x="8" y="51" smashed="yes" rot="R180">
 <attribute name="UPDATED" value="" x="8" y="51" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2234,18 +2275,19 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="NAME" x="10" y="46.6" size="1" layer="25" font="vector" ratio="13"/>
 <attribute name="VALUE" x="6.4" y="45" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="X1501" library="be_con_jump" package="T_MALE_2X13_VERTICAL_GRID_2.54MM" value="MALE_2X13-T-VERTICAL_2.54MM" x="44" y="30" rot="MR0">
+<element name="X1501" library="be_con_jump" package="T_MALE_2X13_VERTICAL_GRID_2.54MM" value="MALE_2X13-T-VERTICAL_2.54MM" x="44" y="30" smashed="yes" rot="MR0">
 <attribute name="UPDATED" value="" x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="FUNCTION" value="KEYPAD EXT," x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="COMMISSIONED" value="2015-02-03" x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="PART_CODE_BEL" value="X_PAC_T_MALE_2X13_VERTICAL_GRID_2.54mm" x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
 <attribute name="BOM" value="YES" x="44" y="48" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="NAME" x="61.77" y="28" size="1" layer="26" font="vector" ratio="13" rot="MR90"/>
 </element>
 <element name="S1501" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="85" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="85" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="85" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET1" x="157" y="81" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET1" x="158.4" y="86.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="85" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="85" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="85" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2253,7 +2295,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1502" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="75" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="75" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="75" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET2" x="157" y="71" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET2" x="158.2" y="76.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="75" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="75" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="75" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2261,7 +2303,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1503" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="65" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="65" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="65" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET3" x="157" y="61" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET3" x="158.4" y="66.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="65" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="65" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="65" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2269,7 +2311,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1504" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="55" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="55" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="55" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET4" x="157" y="51" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET4" x="158" y="57" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="55" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="55" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="55" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2277,7 +2319,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1505" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="45" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="45" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="45" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET5" x="157" y="41" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET5" x="158.2" y="46.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="45" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="45" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="45" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2285,7 +2327,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1506" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="35" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="35" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="35" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET6" x="157" y="31" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET6" x="158.2" y="36.8" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="35" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="35" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="35" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2293,7 +2335,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1507" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="25" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="25" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="25" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET7" x="157" y="21" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET7" x="158.2" y="26.8" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="25" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="25" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="25" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2301,7 +2343,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <element name="S1508" library="be_switch" package="T_PUSH_BUTTON_6X6" value="set" x="153" y="15" rot="R180">
 <attribute name="UPDATED" value="" x="153" y="15" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="153" y="15" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
-<attribute name="FUNCTION" value="SET8" x="157" y="11" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
+<attribute name="FUNCTION" value="SET8" x="158.2" y="16.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
 <attribute name="COMMISSIONED" value="2014-10-14" x="153" y="15" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="PART_CODE_BEL" value="S_PAC_T_PUSH_BUTTON_6X6MM" x="153" y="15" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 <attribute name="BOM" value="YES" x="153" y="15" size="1" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
@@ -2356,7 +2398,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="NAME" x="2.8" y="72.2" size="1" layer="25" font="vector" ratio="13" rot="R90"/>
 <attribute name="VALUE" x="9.035" y="73.069" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
 </element>
-<element name="TP1602" library="be_con_jump" package="T_TEST_POINT_LARGE" value="TEST_POINT_T_LARGE" x="11" y="60" smashed="yes">
+<element name="TP1606" library="be_con_jump" package="T_TEST_POINT_LARGE" value="TEST_POINT_T_LARGE" x="11" y="60" smashed="yes">
 <attribute name="UPDATED" value="" x="38.94" y="46.03" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="38.94" y="46.03" size="1.778" layer="27" display="off"/>
 <attribute name="FUNCTION" value="" x="38.94" y="46.03" size="1.778" layer="27" display="off"/>
@@ -2364,9 +2406,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="38.94" y="46.03" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="NO" x="38.94" y="46.03" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.4" y="60.6" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="9.5" y="61.5" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="TP1601" library="be_con_jump" package="T_TEST_POINT_LARGE" value="TEST_POINT_T_LARGE" x="11" y="55" smashed="yes">
+<element name="TP1605" library="be_con_jump" package="T_TEST_POINT_LARGE" value="TEST_POINT_T_LARGE" x="11" y="55" smashed="yes">
 <attribute name="UPDATED" value="" x="42.75" y="41.03" size="1.778" layer="27" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="42.75" y="41.03" size="1.778" layer="27" display="off"/>
 <attribute name="FUNCTION" value="" x="42.75" y="41.03" size="1.778" layer="27" display="off"/>
@@ -2374,7 +2415,6 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="42.75" y="41.03" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="NO" x="42.75" y="41.03" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.4" y="54.8" size="1" layer="25" font="vector" ratio="13" rot="R180"/>
-<attribute name="VALUE" x="9.5" y="56.5" size="1" layer="27" font="vector" ratio="13"/>
 </element>
 <element name="D1601" library="be_diode" package="T_DO204_GRID_10MM" value="BAT48" x="8.6" y="64.8" smashed="yes" rot="R180">
 <attribute name="UPDATED" value="2015-04-14" x="-10.45" y="82.58" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2426,13 +2466,15 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="NAME" x="7" y="66.8" size="1" layer="25" font="vector" ratio="13"/>
 <attribute name="VALUE" x="7" y="70" size="1" layer="27" font="vector" ratio="13"/>
 </element>
-<element name="D1401" library="be_diode" package="T_DO201_GRID_18MM" value="1N5400" x="17" y="20.4" rot="MR90">
+<element name="D1401" library="be_diode" package="T_DO201_GRID_18MM" value="1N5400" x="17" y="20.4" smashed="yes" rot="MR90">
 <attribute name="UPDATED" value="" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="PART_CODE_EXT" value="" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="FUNCTION" value="" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="COMMISSIONED" value="2015-10-16" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="PART_CODE_BEL" value="D_PAC_T_DO201_GRID_18MM_VAL_1N5400" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
 <attribute name="BOM" value="YES" x="17" y="20.4" size="1" layer="28" font="vector" ratio="13" rot="MR90" display="off"/>
+<attribute name="NAME" x="19" y="18" size="1" layer="26" font="vector" ratio="13" rot="MR90"/>
+<attribute name="VALUE" x="18.7" y="24.6" size="1" layer="28" font="vector" ratio="13" rot="MR90"/>
 </element>
 <element name="FD1102" library="be_marks" package="CROSSHAIR" value="FIDUCIAL_CROSSHAIR" x="14" y="5">
 <attribute name="UPDATED" value="" x="14" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
@@ -2458,7 +2500,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_1k5" x="41" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="BOM" value="YES" x="41" y="79" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
 <attribute name="NAME" x="42" y="80.6" size="1" layer="25" font="vector" ratio="13" rot="R270"/>
-<attribute name="VALUE" x="45" y="77" size="1" layer="27" font="vector" ratio="13" rot="R90"/>
+<attribute name="VALUE" x="40.8" y="76.6" size="1" layer="27" font="vector" ratio="13" rot="R270"/>
 </element>
 <element name="LED901" library="be_opt" package="S_0805" value="red" x="41.15" y="86.75" smashed="yes" rot="R90">
 <attribute name="UPDATED" value="" x="41.15" y="86.75" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
@@ -2491,6 +2533,287 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <attribute name="VALUE" x="15.8" y="70.8" size="1" layer="27" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="U$1" library="be_frame" package="A4_LANDSCAPE" value="" x="-49.6" y="-63.2"/>
+<element name="TP1402" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="56" y="5" smashed="yes">
+<attribute name="UPDATED" value="" x="56" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="56" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="SDA" x="54.8" y="2.8" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="56" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="56" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="56" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1401" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="61" y="5" smashed="yes">
+<attribute name="UPDATED" value="" x="61" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="61" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="SCL" x="60" y="2.8" size="1" layer="25" font="vector" ratio="13"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="61" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="61" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="61" y="5" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="X1403" library="be_con_jump" package="T_MALE_3X1_VERTICAL" value="MALE_1X3" x="70.2" y="5" smashed="yes" rot="R90">
+<attribute name="UPDATED" value="" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="FUNCTION" value="DEBUG &amp; INSTRUMENTATION" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="PART_CODE_BEL" value="X_PAC_T_MALE_1X3_VERTICAL_GRID_2.54MM" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="BOM" value="YES" x="70.2" y="5" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="NAME" x="65.73" y="2.04" size="1" layer="25" font="vector" ratio="13"/>
+</element>
+<element name="TP1607" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="4.2" y="89.2" smashed="yes">
+<attribute name="UPDATED" value="" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="4.2" y="89.2" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1604" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="9" y="79.8" smashed="yes">
+<attribute name="UPDATED" value="" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="9" y="79.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1601" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="3.6" y="62.4" smashed="yes">
+<attribute name="UPDATED" value="" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="3.6" y="62.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1603" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="3.6" y="50.8" smashed="yes">
+<attribute name="UPDATED" value="" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="3.6" y="50.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1602" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="3.6" y="56.8" smashed="yes">
+<attribute name="UPDATED" value="" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="3.6" y="56.8" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1107" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="93.98" smashed="yes">
+<attribute name="UPDATED" value="" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1106" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="91.44" smashed="yes" rot="R90">
+<attribute name="UPDATED" value="" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="91.44" size="1" layer="27" font="vector" ratio="13" rot="R90" display="off"/>
+</element>
+<element name="TP1105" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="88.9" smashed="yes">
+<attribute name="UPDATED" value="" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1104" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="86.36" smashed="yes">
+<attribute name="UPDATED" value="" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1103" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="83.82" smashed="yes">
+<attribute name="UPDATED" value="" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1102" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="137.16" y="81.28" smashed="yes">
+<attribute name="UPDATED" value="" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="137.16" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1101" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="93.98" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="93.98" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1114" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="91.44" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="91.44" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1113" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="88.9" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="88.9" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1112" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="86.36" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="86.36" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1111" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="83.82" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="83.82" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1110" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="142.24" y="81.28" smashed="yes">
+<attribute name="UPDATED" value="" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="142.24" y="81.28" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1109" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="25.4" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="25.4" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1108" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="22.86" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1121" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="20.32" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1120" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="17.78" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1119" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="15.24" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="15.24" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1118" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="22.86" y="12.7" smashed="yes">
+<attribute name="UPDATED" value="" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="22.86" y="12.7" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1117" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="27.94" y="22.86" smashed="yes">
+<attribute name="UPDATED" value="" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="27.94" y="22.86" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1116" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="27.94" y="20.32" smashed="yes">
+<attribute name="UPDATED" value="" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="27.94" y="20.32" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1115" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="27.94" y="17.78" smashed="yes">
+<attribute name="UPDATED" value="" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="27.94" y="17.78" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1124" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="15.24" y="58.42" smashed="yes">
+<attribute name="UPDATED" value="" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="15.24" y="58.42" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1123" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="15.24" y="55.88" smashed="yes">
+<attribute name="UPDATED" value="" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="15.24" y="55.88" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1122" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="15.24" y="53.34" smashed="yes">
+<attribute name="UPDATED" value="" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="15.24" y="53.34" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1127" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="13.335" y="97.79" smashed="yes">
+<attribute name="UPDATED" value="" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="13.335" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1126" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="10.795" y="97.79" smashed="yes">
+<attribute name="UPDATED" value="" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="10.795" y="97.79" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
+<element name="TP1125" library="be_con_jump" package="T_TEST_POINT_SMALL" value="TEST_POINT_T_SMALL" x="13.335" y="95.25" smashed="yes">
+<attribute name="UPDATED" value="" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_EXT" value="" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="FUNCTION" value="" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="PART_CODE_BEL" value="TP_PAC_T_TEST_POINT_SMALL" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+<attribute name="BOM" value="NO" x="13.335" y="95.25" size="1" layer="27" font="vector" ratio="13" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="DRV_1_SEG_A">
@@ -3068,7 +3391,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <contactref element="H1102" pad="H1"/>
 <contactref element="H1103" pad="H1"/>
 <contactref element="H1104" pad="H1"/>
-<polygon width="0.3" layer="15">
+<polygon width="0.15" layer="15">
 <vertex x="0" y="100"/>
 <vertex x="160" y="100"/>
 <vertex x="160" y="0"/>
@@ -3122,6 +3445,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="139.35" y1="42.35" x2="139.2" y2="42.2" width="0.3" layer="16"/>
 <via x="139.2" y="42.2" extent="1-16" drill="0.3"/>
 <via x="139.4" y="45.4" extent="1-16" drill="0.3"/>
+<contactref element="X1403" pad="1"/>
+<contactref element="TP1603" pad="1"/>
 </signal>
 <signal name="P5V" class="1">
 <contactref element="IC101" pad="16"/>
@@ -3303,7 +3628,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="74.2" y1="23.11" x2="74.2" y2="22.4" width="0.3" layer="16"/>
 <via x="74.2" y="22.4" extent="1-16" drill="0.3"/>
 <via x="73" y="22.4" extent="1-16" drill="0.3"/>
-<polygon width="0.5" layer="2">
+<polygon width="0.3" layer="2">
 <vertex x="0" y="100"/>
 <vertex x="160" y="100"/>
 <vertex x="160" y="0"/>
@@ -3317,7 +3642,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <contactref element="C1401" pad="+"/>
 <contactref element="R1602" pad="2"/>
 <contactref element="IC1601" pad="8"/>
-<contactref element="TP1601" pad="1"/>
+<contactref element="TP1605" pad="1"/>
 <contactref element="R1603" pad="2"/>
 <contactref element="T1601" pad="2"/>
 <contactref element="T1602" pad="2"/>
@@ -3346,8 +3671,6 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="15.2" y1="75.45" x2="14.65" y2="76" width="0.3" layer="1"/>
 <wire x1="14.65" y1="76" x2="9.4" y2="76" width="0.3" layer="1"/>
 <via x="9.4" y="76" extent="1-16" drill="0.3"/>
-<wire x1="8.22" y1="22.7" x2="8.22" y2="27.7" width="1" layer="16"/>
-<wire x1="8.22" y1="27.7" x2="8.32" y2="27.8" width="1" layer="16"/>
 <contactref element="D1401" pad="C"/>
 <wire x1="44.455" y1="39" x2="44.4" y2="38.945" width="0.3" layer="1"/>
 <wire x1="46.995" y1="39" x2="47" y2="38.995" width="0.3" layer="1"/>
@@ -3385,6 +3708,8 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="133.955" y1="39" x2="133.955" y2="41.955" width="0.3" layer="1"/>
 <wire x1="133.955" y1="41.955" x2="134.8" y2="42.8" width="0.3" layer="1"/>
 <wire x1="134.8" y1="42.8" x2="136.2" y2="42.8" width="0.3" layer="1"/>
+<contactref element="X1403" pad="3"/>
+<contactref element="TP1602" pad="1"/>
 </signal>
 <signal name="CTRL_SDA">
 <contactref element="IC101" pad="15"/>
@@ -3556,6 +3881,10 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="40.4" y1="46.4" x2="40" y2="46.8" width="0.15" layer="1"/>
 <via x="40" y="46.8" extent="1-16" drill="0.3"/>
 <wire x1="40" y1="47.6" x2="40" y2="46.8" width="0.15" layer="16"/>
+<contactref element="TP1402" pad="1"/>
+<wire x1="54.12" y1="7.73" x2="54.12" y2="5.48" width="0.15" layer="1"/>
+<wire x1="54.12" y1="5.48" x2="54.6" y2="5" width="0.15" layer="1"/>
+<wire x1="54.6" y1="5" x2="56" y2="5" width="0.15" layer="1"/>
 </signal>
 <signal name="CTRL_SCL">
 <contactref element="IC101" pad="14"/>
@@ -3718,6 +4047,10 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="40.8" y1="37.6" x2="40.8" y2="48.8" width="0.15" layer="1"/>
 <via x="40.8" y="48.8" extent="1-16" drill="0.3"/>
 <wire x1="40.8" y1="48.2" x2="40.8" y2="48.8" width="0.15" layer="16"/>
+<contactref element="TP1401" pad="1"/>
+<wire x1="56.66" y1="7.73" x2="56.67" y2="7.73" width="0.15" layer="1"/>
+<wire x1="56.67" y1="7.73" x2="59.4" y2="5" width="0.15" layer="1"/>
+<wire x1="59.4" y1="5" x2="61" y2="5" width="0.15" layer="1"/>
 </signal>
 <signal name="DRV_2_SEG_A">
 <contactref element="IC201" pad="4"/>
@@ -6454,7 +6787,10 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="10.6" y1="82.85" x2="10.6" y2="80.8" width="0.254" layer="1"/>
 <wire x1="10.6" y1="80.8" x2="11.6" y2="79.8" width="0.254" layer="1"/>
 <wire x1="11.6" y1="79.8" x2="12.21" y2="79.8" width="0.254" layer="1"/>
-<wire x1="4.59" y1="79.8" x2="12.21" y2="79.8" width="0.254" layer="1"/>
+<wire x1="4.59" y1="79.8" x2="8.8" y2="79.8" width="0.254" layer="1"/>
+<contactref element="TP1604" pad="1"/>
+<wire x1="8.8" y1="79.8" x2="9" y2="79.8" width="0.254" layer="1"/>
+<wire x1="9" y1="79.8" x2="12.21" y2="79.8" width="0.254" layer="1"/>
 </signal>
 <signal name="TIM_OUT">
 <contactref element="IC1601" pad="3"/>
@@ -6472,6 +6808,14 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="7.6" y1="86.35" x2="7.6" y2="85.6" width="0.15" layer="1"/>
 <wire x1="7.6" y1="85.6" x2="8.8" y2="84.4" width="0.15" layer="1"/>
 <wire x1="8.8" y1="84.4" x2="11.45" y2="84.4" width="0.15" layer="1"/>
+<contactref element="TP1607" pad="1"/>
+<wire x1="4.2" y1="89.2" x2="4.2" y2="86.6" width="0.15" layer="16"/>
+<wire x1="4.2" y1="86.6" x2="9.2" y2="81.6" width="0.15" layer="16"/>
+<wire x1="9.2" y1="81.6" x2="13.4" y2="81.6" width="0.15" layer="16"/>
+<wire x1="13.4" y1="81.6" x2="14" y2="81" width="0.15" layer="16"/>
+<wire x1="14" y1="81" x2="14" y2="77.4" width="0.15" layer="16"/>
+<wire x1="14" y1="77.4" x2="13.86" y2="77.26" width="0.15" layer="16"/>
+<wire x1="13.86" y1="77.26" x2="12.21" y2="77.26" width="0.15" layer="16"/>
 </signal>
 <signal name="TIM_2">
 <contactref element="R1601" pad="1"/>
@@ -6503,12 +6847,14 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="14.8" y1="66.85" x2="14.8" y2="72.8" width="0.15" layer="1"/>
 <wire x1="14.8" y1="72.8" x2="12.88" y2="74.72" width="0.15" layer="1"/>
 <wire x1="12.88" y1="74.72" x2="12.21" y2="74.72" width="0.15" layer="1"/>
+<contactref element="TP1601" pad="1"/>
+<wire x1="3.6" y1="64.8" x2="3.6" y2="62.4" width="0.15" layer="16"/>
 </signal>
 <signal name="TIM_3">
 <contactref element="R1601" pad="2"/>
 <contactref element="IC1601" pad="7"/>
 <contactref element="R1602" pad="1"/>
-<contactref element="TP1602" pad="1"/>
+<contactref element="TP1606" pad="1"/>
 <contactref element="D1601" pad="A"/>
 <wire x1="7.95" y1="83" x2="7.95" y2="84.05" width="0.15" layer="1"/>
 <wire x1="7.95" y1="84.05" x2="7.4" y2="84.6" width="0.15" layer="1"/>
@@ -6520,13 +6866,14 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="2.8" y1="74.72" x2="2.8" y2="69.65" width="0.15" layer="1"/>
 <wire x1="2.8" y1="69.65" x2="3.45" y2="69" width="0.15" layer="1"/>
 <wire x1="13.6" y1="64.8" x2="11" y2="64.8" width="0.15" layer="1"/>
-<wire x1="11" y1="64.8" x2="6.8" y2="64.8" width="0.15" layer="1"/>
-<wire x1="6.8" y1="64.8" x2="5.2" y2="66.4" width="0.15" layer="1"/>
-<wire x1="5.2" y1="66.4" x2="3.8" y2="66.4" width="0.15" layer="1"/>
+<wire x1="11" y1="64.8" x2="6.2" y2="64.8" width="0.15" layer="1"/>
+<wire x1="6.2" y1="64.8" x2="4.6" y2="66.4" width="0.15" layer="1"/>
+<wire x1="4.6" y1="66.4" x2="3.8" y2="66.4" width="0.15" layer="1"/>
 <wire x1="3.8" y1="66.4" x2="3.4" y2="66.8" width="0.15" layer="1"/>
 <wire x1="3.4" y1="66.8" x2="3.4" y2="68.95" width="0.15" layer="1"/>
 <wire x1="3.4" y1="68.95" x2="3.45" y2="69" width="0.15" layer="1"/>
 <wire x1="11" y1="60" x2="11" y2="64.8" width="0.15" layer="1"/>
+<via x="6.2" y="64.8" extent="1-16" drill="0.8" diameter="1.4224"/>
 </signal>
 <signal name="DRV_ANODE_2" class="1">
 <contactref element="DIS501" pad="3"/>
@@ -6585,7 +6932,7 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <wire x1="40.6" y1="85" x2="40.1" y2="84.5" width="0.15" layer="1"/>
 <wire x1="40.1" y1="84.5" x2="40.1" y2="83.25" width="0.15" layer="1"/>
 </signal>
-<signal name="N$1">
+<signal name="TIM_45">
 <contactref element="C1603" pad="1"/>
 <contactref element="C1602" pad="2"/>
 <wire x1="13.75" y1="69" x2="13.2" y2="69" width="0.15" layer="1"/>
@@ -6597,16 +6944,23 @@ Phone: +49 6203 9588 00&lt;br /&gt;</description>
 <errors>
 <approved hash="3,1,827aa75758997db4"/>
 <approved hash="3,16,017ea757589cfeb5"/>
-<approved hash="7,39,9e5dff64c1c6a33f"/>
+<approved hash="3,15,c36b351d3afdcc8b"/>
 <approved hash="7,39,6de7bb49ffc0c8fc"/>
+<approved hash="7,39,9e5dff64c1c6a33f"/>
 <approved hash="7,39,3cfcee37c0e51236"/>
+<approved hash="18,29,d80cfc79fc35d080"/>
+<approved hash="18,29,0b4e976ec8d4270e"/>
+<approved hash="18,29,8838e0c33f0dd2e3"/>
+<approved hash="18,29,3ca3383d39f93ce7"/>
+<approved hash="18,29,152dda44ae44d3f4"/>
+<approved hash="18,29,1de6ce12a17e3080"/>
 <approved hash="18,29,8b2e3486ca904b20"/>
 <approved hash="18,29,ee6b83a396cc7303"/>
 <approved hash="18,29,3361a9af9cf65ea5"/>
 <approved hash="18,30,20407f450b452e74"/>
 <approved hash="18,30,86fad9ffadff2e74"/>
-<approved hash="18,30,2079a17cd1f0f500"/>
 <approved hash="18,30,86c307c6774af500"/>
+<approved hash="18,30,2079a17cd1f0f500"/>
 <approved hash="19,1,445d0912d1b4397a"/>
 <approved hash="19,1,63b99bfce5378efc"/>
 <approved hash="6,16,da3510971097da35"/>
