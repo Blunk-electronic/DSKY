@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
+BASE_DIR="../.."
+
 DFLT_EPF_PATH="."
-DFLT_LBR_PATH="../../lbr_eagle/lbr/misc:../../lbr_eagle/lbr/passive:../../lbr_eagle/lbr/active"
-DFLT_SCR_PATH="../../lbr_eagle/scr"
-DFLT_ULP_PATH="../../lbr_eagle/ulp"
-DFLT_CAM_PATH="../../lbr_eagle/cam"
-DFLT_DRU_PATH="../../lbr_eagle/dru"
+DFLT_LBR_PATH="$BASE_DIR/lbr_eagle/lbr/misc:$BASE_DIR/lbr_eagle/lbr/passive:$BASE_DIR/lbr_eagle/lbr/active"
+DFLT_SCR_PATH="$BASE_DIR/lbr_eagle/scr"
+DFLT_ULP_PATH="$BASE_DIR/lbr_eagle/ulp"
+DFLT_CAM_PATH="$BASE_DIR/lbr_eagle/cam"
+DFLT_DRU_PATH="$BASE_DIR/lbr_eagle/dru"
 
 EAGLERC="eagle.rc"
 EAGLEEPF="eagle.epf"
