@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -75,54 +75,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="frame_development" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="frame_net_changers" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="bot_pads" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="S_DOKU" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="brd_placement_notes" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="DrillLegend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="145" name="DrillLegend_01-16" color="2" fill="9" visible="yes" active="yes"/>
-<layer number="146" name="DrillLegend_01-20" color="3" fill="9" visible="yes" active="yes"/>
 <layer number="198" name="BMP198" color="7" fill="1" visible="no" active="no"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="TopDocument" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="202" name="Route2Document" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="203" name="Route3Document" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="204" name="Route4Document" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="205" name="Route5Document" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="206" name="Route6Document" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="207" name="Route7Document" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="208" name="Route8Document" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="209" name="Route9Document" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="210" name="Route10Document" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="211" name="Route11Document" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="212" name="Route12Document" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="213" name="Route13Document" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="214" name="Route14Document" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="215" name="Route15Document" color="4" fill="6" visible="yes" active="yes"/>
-<layer number="216" name="BottomDocument" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="220" name="DimensionDocument" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="221" name="tPlaceDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="222" name="bPlaceDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="225" name="tNamesDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="bNamesDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="tValuesDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="bValuesDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="tStopDocument" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="230" name="bStopDocument" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="231" name="tCreamDocument" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="232" name="bCreamDocument" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="233" name="tFinishDocument" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="234" name="bFinishDocument" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="235" name="tGlueDocument" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="236" name="bGlueDocument" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="244" name="DrillsDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="245" name="HolesDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="246" name="MillingDocument" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="247" name="MeasuresDocument" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
